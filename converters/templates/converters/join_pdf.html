@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}Join PDF{% endblock %}
+
+{% block  meta_description %}{% trans 'Combine multiple PDF files into a single document. A user-friendly interface for rearranging pages and quickly merging documents online.' %}{% endblock %}
+
+{% block filetype %}<input type="file" name="file" id="file-input" class="hidden" accept=".pdf" multiple>{% endblock %}
+
+{% block tool_description %}
+<div class="mb-8">
+    <h1 class="font-display text-2xl mb-2" style="font-weight:600">{% trans "PDF Merger" %}</h1>
+    <p class="text-[13.5px]" style="color:var(--ink-soft)">{% trans "Combine multiple PDF files into a single, organized document. Simply upload up to 20 files and click the convert button." %}</p>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="mt-16 max-w-4xl mx-auto text-left space-y-12">
+
+    <section>
+        <h2 class="font-display text-2xl font-bold mb-4">{% trans "Why join PDF files together?" %}</h2>
+        <p class="text-[15px] leading-relaxed mb-4" style="color:var(--ink-soft)">
+            {% trans "Sending multiple file attachments in an email looks unprofessional and is frustrating for the recipient to download, open, and organize. Whether you are dealing with scanned book chapters, scattered monthly invoices, or individual project reports, keeping them separate is a logistical headache." %}
+        </p>
+        <p class="text-[15px] leading-relaxed" style="color:var(--ink-soft)">
+            {% trans "Our online PDF Merger allows you to combine multiple PDF documents into a single, cohesive file. It streamlines your digital workspace, making it infinitely easier to share, print, or archive your important documents without losing track of individual pages." %}
+        </p>
+    </section>
+
+    <section>
+        <h3 class="font-display text-xl font-bold mb-4">{% trans "Who uses a PDF merger?" %}</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="p-5 border rounded-md" style="border-color:var(--line); background:var(--paper-card)">
+                <h4 class="font-semibold mb-2">{% trans "Legal & Real Estate Teams" %}</h4>
+                <p class="text-[14px]" style="color:var(--ink-soft)">{% trans "Compile exhaustive property portfolios, legal briefs, or contract addendums. Merge separately signed signature pages back into the main master document before sending it to clients or courts." %}</p>
+            </div>
+            <div class="p-5 border rounded-md" style="border-color:var(--line); background:var(--paper-card)">
+                <h4 class="font-semibold mb-2">{% trans "Accounting & Freelancers" %}</h4>
+                <p class="text-[14px]" style="color:var(--ink-soft)">{% trans 'Instead of sending your accountant 15 individual PDF receipts at the end of the month, merge them into one organized "Expense Report" document to ensure nothing gets lost in transit.' %}</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="font-display text-xl font-bold mb-4">{% trans "Intuitive and lossless merging" %}</h3>
+        <ul class="space-y-3 text-[15px]" style="color:var(--ink-soft)">
+            <li class="flex items-start">
+                <span class="mr-3 text-lg" style="color:var(--stamp)">✓</span>
+                <div><strong>{% trans "Visual Drag-and-Drop:" %}</strong> {% trans "You have full control. Upload your files and simply drag their thumbnail cards to rearrange them into the exact sequence you need before hitting the merge button." %}</div>
+            </li>
+            <li class="flex items-start">
+                <span class="mr-3 text-lg" style="color:var(--stamp)">✓</span>
+                <div><strong>{% trans "Lossless Quality:" %}</strong> {% trans "Merging files does not alter the content inside them. Your text resolution, vector graphics, and page dimensions remain 100% identical to the original uploads." %}</div>
+            </li>
+            <li class="flex items-start">
+                <span class="mr-3 text-lg" style="color:var(--stamp)">✓</span>
+                <div><strong>{% trans "Cross-Platform:" %}</strong> {% trans "No need to install heavy desktop software like Adobe Acrobat. Merge files directly from your browser on Windows, Mac, Linux, or mobile devices." %}</div>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h3 class="font-display text-xl font-bold mb-6">{% trans "Frequently Asked Questions" %}</h3>
+
+        <div class="space-y-6">
+            <div>
+                <h4 class="font-semibold text-[15px] mb-1">{% trans "Can I rearrange the order of the files?" %}</h4>
+                <p class="text-[14px] leading-relaxed" style="color:var(--ink-soft)">{% trans "Yes! Once you upload your PDFs, they will appear as file cards on the screen. Simply click, hold, and drag the cards left or right to reorder them. The files will be combined in the exact order shown on your screen." %}</p>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-[15px] mb-1">{% trans "How many files can I merge at once?" %}</h4>
+                <p class="text-[14px] leading-relaxed" style="color:var(--ink-soft)">{% trans "You can upload and merge up to 20 separate PDF files in a single session. If you have more than 20 files, you can merge the first batch, download the result, and then merge that new file with the remaining documents." %}</p>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-[15px] mb-1">{% trans "Will merging PDFs reduce their visual quality?" %}</h4>
+                <p class="text-[14px] leading-relaxed" style="color:var(--ink-soft)">{% trans "Not at all. Our tool performs a direct structural merge. We do not re-encode, compress, or rasterize the pages during this process. The final document will retain the exact same visual quality and text sharpness as your original files." %}</p>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-[15px] mb-1">{% trans "Is it safe to merge confidential documents?" %}</h4>
+                <p class="text-[14px] leading-relaxed" style="color:var(--ink-soft)">{% trans "Absolutely. We employ strict privacy measures. Your files are merged automatically by our server scripts without any human intervention. Every uploaded file and the final merged document are permanently purged from our servers within one hour." %}</p>
+            </div>
+        </div>
+    </section>
+
+</div>
+{% endblock %}
+
+
+{% block fetch_url %}fetch(`${LANGUAGE_PREFIX}/join-pdf/`, {method: 'POST', body: formData}){% endblock %}
+
+{% block showdownload %}{% endblock %}
+{% block showconverting %}{% endblock %}
+
+{% block scripts %}
+{% endblock %}

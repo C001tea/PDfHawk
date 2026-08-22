@@ -1,0 +1,5 @@
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M6 2h9l5 5v15H6V2z" fill="#1D4E89" stroke="#1D4E89" stroke-width="1.6" stroke-linejoin="round"/>
+    <path d="M14 2v6h6" stroke="#ffffff" stroke-width="1.6" stroke-linejoin="round"/>
+    <text x="6" y="18" font-size="7" fill="white" font-family="monospace" font-weight="bold">PDF</text>
+</svg>

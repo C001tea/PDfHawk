@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{% block meta_description %}{% endblock %}">
+    <title>{% block title %}Me site{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script>
+        const LANGUAGE_PREFIX = '/{{ LANGUAGE_CODE }}';
+        console.log('LANGUAGE_PREFIX:', LANGUAGE_PREFIX)
+    </script>
+    <link rel="icon" type="image/svg+xml" href="{% static 'favicon.svg' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --paper: #FFFFFF;
+            --paper-card: #F4F5F7;
+            --ink: #14213D;
+            --ink-soft: #5B6470;
+            --stamp: #1D4E89;
+            --stamp-dark: #123A66;
+            --line: #D7DBE3;
+            --danger: #9B2226;
+        }
+        body{ background:#EEF0F3; font-family:'IBM Plex Sans',sans-serif; color:var(--ink); }
+        .font-display{ font-family:'Source Serif 4',serif; font-optical-sizing:auto; }
+        .font-mono{ font-family:'IBM Plex Mono',monospace; }
+
+        .letterhead{
+            background:var(--paper);
+            border:1px solid var(--line);
+            border-bottom:3px solid var(--ink);
+            padding:20px 28px;
+        }
+
+        /* flat underline tabs */
+        .tab-row{ display:flex; width:100%; background:var(--paper); border:1px solid var(--line); border-top:none; }
+        .tab{
+            position:relative;
+            flex:1 1 0;
+            padding:13px 4px;
+            background:var(--paper);
+            color:var(--ink-soft);
+            border-right:1px solid var(--line);
+            font-size:12px;
+            font-weight:600;
+            text-align:center;
+            text-transform:uppercase;
+            letter-spacing:.045em;
+            transition:background .15s ease, color .15s ease;
+            white-space:nowrap;
+            text-decoration:none;
+            overflow:hidden;
+            text-overflow:ellipsis;
+        }
+        .tab:last-child{ border-right:none; }
+        .tab:hover{ background:var(--paper-card); color:var(--ink); }
+        .tab.active{
+            color:var(--stamp);
+            box-shadow:0 -3px 0 0 var(--stamp) inset;
+            background:var(--paper-card);
+        }
+
+        .stage{
+            background:var(--paper);
+            border:1px solid var(--line);
+            border-top:none;
+        }
+
+        /* dropzone — plain bordered field */
+        .dropzone{
+            position:relative;
+            border:1.5px dashed var(--line);
+            background:var(--paper-card);
+            transition:border-color .2s ease, background-color .2s ease;
+            cursor:pointer;
+        }
+        .dropzone.drag{ border-color:var(--stamp); border-style:solid; background-color:#EAF0F7; }
+
+        /* formal buttons — flat, square-edged */
+        .stamp-btn{
+            background:var(--stamp);
+            color:var(--paper);
+            border:1px solid var(--stamp-dark);
+            border-radius:3px;
+            text-transform:uppercase;
+            letter-spacing:.06em;
+            transition:background .15s ease;
+        }
+        .stamp-btn:hover{ background:var(--stamp-dark); }
+        .stamp-btn:disabled{ opacity:.45; cursor:not-allowed; }
+
+        .stamp-btn-outline{
+            background:var(--paper);
+            color:var(--stamp);
+            border:1px solid var(--stamp);
+            border-radius:3px;
+            text-transform:uppercase;
+            letter-spacing:.06em;
+            transition:background .15s ease, color .15s ease;
+        }
+        .stamp-btn-outline:hover{ background:var(--stamp); color:var(--paper); }
+
+        .file-card{
+            border:1px solid var(--line);
+            background:var(--paper-card);
+            border-radius:3px;
+        }
+
+        #status{ font-family:'IBM Plex Mono',monospace; font-size:12.5px; color:var(--danger); text-align:center; margin-top:.75rem; }
+
+        #spinner{ font-family:'IBM Plex Mono',monospace; letter-spacing:.03em; }
+        #spinner::after{
+            content:''; display:inline-block; width:6px; height:6px; margin-left:6px;
+            border-radius:999px; background:var(--stamp); animation:pulse 1s infinite ease-in-out;
+        }
+        @keyframes pulse{ 0%,100%{opacity:.25;} 50%{opacity:1;} }
+
+        ::selection{ background:var(--stamp); color:var(--paper); }
+
+        @media (max-width: 640px){
+            .tab-row{ overflow-x:auto; scrollbar-width:none; -ms-overflow-style:none; }
+            .tab-row::-webkit-scrollbar{ display:none; }
+            .tab{ flex:0 0 auto; }
+        }
+
+        @media (prefers-reduced-motion: reduce){
+            .tab, .dropzone, .stamp-btn{ transition:none; }
+            #spinner::after{ animation:none; }
+        }
+    </style>
+</head>
+<body>
+{% load i18n %}
+
+<div class="max-w-5xl mx-auto px-6 pt-12">
+
+    <div class="letterhead flex items-center justify-between mb-0">
+        <div class="flex items-center gap-3.5">
+            <div class="w-9 h-9 flex items-center justify-center" style="border:1.5px solid var(--ink)">
+                <img src="{% static 'hawk.jpg' %}">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 2h9l5 5v15H6V2z" stroke="var(--ink)" stroke-width="1.6" stroke-linejoin="round"/><path d="M14 2v6h6" stroke="var(--ink)" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+                <div class="font-display text-[19px] leading-none" style="font-weight:600">PDF Hawk</div>
+                <div class="font-mono text-[10.5px] tracking-wide mt-1" style="color:var(--ink-soft)">{% trans "DOCUMENT PROCESSING SERVICE" %}</div>
+            </div>
+        </div>
+
+        <div class="flex sm:hidden items-center">
+            <form method="post" action="{% url 'set_language' %}" id="lang-form-mobile">
+                {% csrf_token %}
+                <input name="next" type="hidden" value="{{ request.path }}">
+                {% get_current_language as current_lang %}
+                <select name="language" onchange="document.getElementById('lang-form-mobile').submit()"
+                        class="font-mono text-[11px] px-1 py-1 cursor-pointer border-0 bg-transparent" style="color:var(--ink-soft)">
+                    <option value="en" {% if current_lang == 'en' %}selected{% endif %}>EN</option>
+                    <option value="ru" {% if current_lang == 'ru' %}selected{% endif %}>RU</option>
+                    <option value="ro" {% if current_lang == 'ro' %}selected{% endif %}>RO</option>
+                </select>
+            </form>
+        </div>
+
+        <div class="flex items-center gap-4 hidden sm:flex">
+            <form method="post" action="{% url 'set_language' %}" id="lang-form">
+                {% csrf_token %}
+                <input name="next" type="hidden" value="{{ request.path }}">
+                {% get_current_language as current_lang %}
+                <select name="language" onchange="document.getElementById('lang-form').submit()"
+                        class="font-mono text-[14px] px-2 py-1 stamp-btn-outline cursor-pointer border-0 bg-transparent">
+                    <option value="en" {% if current_lang == 'en' %}selected{% endif %}>English</option>
+                    <option value="ru" {% if current_lang == 'ru' %}selected{% endif %}>Русский</option>
+                    <option value="ro" {% if current_lang == 'ro' %}selected{% endif %}>Română</option>
+                </select>
+            </form>
+            <div class="font-mono text-[10.5px] text-right" style="color:var(--ink-soft)">
+                {% trans "NO REGISTRATION REQUIRED" %}<br>{% trans "FILES REMOVED AFTER 1 HOUR" %}
+            </div>
+        </div>
+    </div>
+
+    <nav class="tab-row">
+        <a href="{% url 'pdf-to-word' %}" class="tab {% if request.resolver_match.url_name == 'pdf-to-word' %}active{% endif %}">PDF → Word</a>
+        <a href="{% url 'pdf-to-image' %}" class="tab {% if request.resolver_match.url_name == 'pdf-to-image' %}active{% endif %}">PDF → PNG/JPG</a>
+        <a href="{% url 'compress-pdf' %}" class="tab {% if request.resolver_match.url_name == 'compress-pdf' %}active{% endif %}">{% trans "Compress" %}</a>
+        <a href="{% url 'pdf-ocr' %}" class="tab {% if request.resolver_match.url_name == 'pdf-ocr' %}active{% endif %}">{% trans "OCR" %}</a>
+        <a href="{% url 'word-to-pdf' %}" class="tab {% if request.resolver_match.url_name == 'word-to-pdf' %}active{% endif %}">Word → PDF</a>
+        <a href="{% url 'join-pdf' %}" class="tab {% if request.resolver_match.url_name == 'join-pdf' %}active{% endif %}">{% trans "Join PDF" %}</a>
+        <a href="{% url 'image-pdf' %}" class="tab {% if request.resolver_match.url_name == 'image-pdf' %}active{% endif %}">PNG/JPG → PDF</a>
+    </nav>
+
+    <div class="stage px-6 sm:px-10 pt-9 pb-8 mb-16">
+        {% block tool_description %}{% endblock %}
+        <form enctype="multipart/form-data" method="post" id="upload-form" data-tool="{% block tool_name %}{% endblock %}">
+            {% csrf_token %}
+            <div id="drag-drop" class="dropzone px-8 py-14 text-center">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="mx-auto mb-4"><path d="M12 16V4M12 4l-4 4M12 4l4 4" stroke="var(--stamp)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 16v3a2 2 0 002 2h12a2 2 0 002-2v-3" stroke="var(--stamp)" stroke-width="1.8" stroke-linecap="round"/></svg>
+                <p class="text-[14.5px] font-medium">{% trans "Drop files here" %}</p>
+                <p class="text-[12.5px] mt-1" style="color:var(--ink-soft)">{% trans "or" %}</p>
+
+                <div class="flex items-center justify-center gap-3 mt-5">
+                    <label class="stamp-btn text-[12.5px] font-semibold px-6 py-2.5 inline-block cursor-pointer">
+                        {% trans "Choose file" %}
+                        {% block filetype %}<input type="file" name="file" id="file-input" class="hidden" accept=".pdf" multiple>{% endblock %}
+                    </label>
+
+                    <button id="clear-all" type="button" onclick="removeAllFiles()"
+                        class="hidden stamp-btn-outline text-[12.5px] font-semibold px-6 py-2.5 transition-colors">
+                    {% trans "Clear all" %}
+                    </button>
+                </div>
+                <p id="file-name" class="mt-4 font-mono text-[12px]" style="color:var(--ink-soft)"></p>
+
+                <div id="file-list" class="flex flex-wrap gap-4 justify-center max-w-4xl mx-auto mt-6"></div>
+            </div>
+
+            {% block choosetype %}{% endblock %}
+
+            <div class="flex items-center justify-center gap-4 mt-7">
+
+                <button type="submit" class="stamp-btn text-[13px] font-semibold px-7 py-3">
+                    {% trans "Convert" %}
+                </button>
+
+                <div id="download-all" class="hidden">
+                    <button class="stamp-btn-outline text-[13px] font-semibold px-7 py-3">
+                        {% trans "Download all" %}
+                    </button>
+                </div>
+            </div>
+        </form>
+
+        <div id="spinner" class="hidden mt-5 text-center text-[13px]" style="color:var(--ink-soft)">{% trans "Converting files..." %}</div>
+
+        <div id="status"></div>
+    </div>
+
+    {% block content %}
+    {% endblock %}
+
+</div>
+
+<script>
+    const globalFiles = new Map()
+    let fileIdCounter = 0
+    const fileList = document.getElementById('file-list')
+    Sortable.create(fileList, {animation: 150, })
+
+    const dropZone = document.getElementById('drag-drop')
+
+    dropZone.addEventListener('dragover', function(e){
+        e.preventDefault()
+        dropZone.classList.add('drag')
+    })
+
+    dropZone.addEventListener('dragleave', function(){
+        dropZone.classList.remove('drag')
+    })
+
+    const fileName = document.getElementById('file-name')
+    const fileInput = document.getElementById('file-input')
+
+    fileInput.addEventListener('change', function(){
+        document.getElementById('clear-all').classList.remove('hidden')
+        if (fileInput.files.length > 0){
+            Array.from(fileInput.files).forEach(file => {
+                globalFiles.set(fileIdCounter, file)
+                addPreviewListener(file, fileIdCounter)
+                fileIdCounter++
+            })
+            fileInput.value = ''
+        }
+    })
+
+    dropZone.addEventListener('drop', function(e){
+        document.getElementById('clear-all').classList.remove('hidden')
+        e.preventDefault()
+        dropZone.classList.remove('drag')
+        const files = e.dataTransfer.files
+
+        if (files.length > 0){
+            for(let i=0; i<files.length; i++){
+                globalFiles.set(fileIdCounter, files[i]);
+                addPreviewListener(files[i], i)
+                fileIdCounter++
+            }
+        }
+    })
+
+    let allJobs = []
+
+    document.getElementById('upload-form').addEventListener('submit', function(e) {
+        e.preventDefault()
+
+        const spinner = document.getElementById('spinner')
+        const formData = new FormData()
+        formData.append('csrfmiddlewaretoken', document.querySelector('[name=csrfmiddlewaretoken]').value)
+
+        const selectedFormat = document.querySelector('input[name="format"]:checked')
+        if (selectedFormat){
+        formData.append('format', selectedFormat.value)
+        }
+
+        const activeCards = []
+        const cards = document.querySelectorAll('[id^="file-row-"]')
+
+        cards.forEach(card => {
+            const match = card.id.match(/\d+$/)
+            if (match){
+                const fileId = parseInt(match[0])
+                if (globalFiles.has(fileId)){
+                    formData.append('file', globalFiles.get(fileId));
+                    activeCards.push(card)
+                }
+            }
+        })
+
+        if (activeCards.length === 0){
+            showStatus("Choose file")
+            return
+        }
+
+        spinner.classList.remove('hidden')
+        document.getElementById('status').classList.add('hidden')
+
+        {% block fetch_url %}{% endblock %}
+        .then(response => response.json())
+        .then(data => {
+            if (data.error) {
+                showStatus(data.error)
+                spinner.classList.add('hidden')
+                return
+            }
+
+            const jobIds = data.job_id
+            allJobs = allJobs.concat(jobIds)
+
+            const promises = data.job_id.map((jobId, index) => {
+                const card = activeCards[index];
+                if (card){
+                    const statusEl = card.querySelector('p[id^="file-status-"]');
+                    if (statusEl){
+                        {% block showconverting %}statusEl.innerText = 'Converting...';{% endblock %}
+                        statusEl.id = `status-${jobId}`;
+                    }
+                    card.id = `row-${jobId}`
+                }
+                return pollJobStatus(jobId)
+            });
+
+            Promise.all(promises).then((urls) => {
+                spinner.classList.add('hidden')
+
+                const tool = document.getElementById('upload-form').dataset.tool
+                const downloadAll = document.getElementById('download-all')
+
+                if (tool === 'image-pdf'){
+                    downloadAll.classList.remove('hidden')
+                    downloadAll.innerHTML = `<a href="${urls[0]}" download class="stamp-btn text-[13px] font-semibold px-7 py-3 inline-block">Download PDF</a>`
+                }
+                else {
+                    downloadAll.classList.remove('hidden')
+                    downloadAll.onclick = () => {
+                        const params = allJobs.map(id => `job_id=${id}`).join('&')
+                        window.location.href = `/api/download-zip/?${params}`
+                    }
+                }
+            })
+        })
+    })
+
+    function pollJobStatus(jobId){
+        return new Promise((resolve) => {
+        const interval = setInterval(async () => {
+
+            const response = await fetch(`/api/status/${jobId}/`);
+            const data = await response.json();
+            if (data.status === 'done'){
+                console.log('true');
+                clearInterval(interval);
+                {% block showdownload %}showDownloadBtn(data.url, jobId);{% endblock %}
+                resolve(data.url)
+            }
+        }, 2000);
+        })
+    }
+
+    function showStatus(message){
+        const statusDiv = document.getElementById('status');
+        statusDiv.innerText = message;
+        statusDiv.classList.remove('hidden');
+    }
+
+    function showDownloadBtn(downloadUrl, jobId){
+        const statusSpan = document.getElementById(`status-${jobId}`);
+        statusSpan.classList.remove('hidden')
+        statusSpan.innerHTML = `<a href="${downloadUrl}" download class="inline-block mt-3 stamp-btn-outline text-[11px] px-4 py-2" download>Download</a>`
+    }
+
+    function getFileIcon(file, index) {
+        const FILE_ICONS = {
+            'pdf': "{% static 'icons/pdf.svg' %}",
+            'docx': "{% static 'icons/docx.svg' %}",
+            'doc': "{% static 'icons/doc.svg' %}"
+        }
+
+        const ext = file.name.split('.').pop().toLowerCase();
+        const iconUrl = FILE_ICONS[ext];
+        const container = document.getElementById(`preview-container-${index}`)
+        container.outerHTML = `<img id="file-status-${index}" src="${iconUrl}" class="absolute inset-0 m-auto w-36 h-48 object-cover z-0" alf="${ext}">`
+    }
+
+
+    function addPreviewListener(file, index) {
+        fileList.insertAdjacentHTML('beforeend', `
+            <div id="file-row-${index}" class="file-card relative group w-48 h-60 overflow-hidden cursor-move">
+
+                <button type="button" onclick="removeFile(this)"
+                                      class="absolute top-1.5 right-1.5 z-20 w-6 h-6 rounded-md flex items-center justify-center transition-colors shadow-sm focus:outline-none"
+                                      style="background:rgba(30,38,34,.55); color:var(--paper);"
+                                      onmouseover="this.style.background='var(--danger)'"
+                                      onmouseout="this.style.background='rgba(30,38,34,.55)'"
+                                      title="Delete file">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+
+
+                <div id="preview-container-${index}" class="w-full h-full flex items-center justify-center text-xs" style="color:var(--ink-soft)"></div>
+                <div class="absolute inset-0 pointer-events-none h-full bg-black/30 to-transparent"></div>
+
+                <div class="absolute top-0 inset-x-0 p-2 z-10">
+                    <p class="font-mono text-[11px] font-medium truncate" style="color:var(--paper);" title="${file.name}">
+                        ${file.name}
+                    </p>
+                </div>
+                <div class="absolute bottom-0 inset-x-0 p-2 z-10">
+                    <p id="file-status-${index}" class="font-mono text-[12px] truncate" style="color:var(--paper);"></p>
+                </div>
+            </div>
+            `)
+
+        {% block get_file_icon %}{% endblock %}
+
+        {% block icon %}
+        const Data = new FormData()
+        Data.append('file', file)
+
+        const csrfToken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+        fetch(`${LANGUAGE_PREFIX}/get-preview/`, {method: "POST", headers: {'X-CSRFToken': csrfToken}, body: Data})
+        .then(response => response.json())
+        .then(data => {
+            const container = document.getElementById(`preview-container-${index}`)
+            container.outerHTML = `<img src="${data.preview_url}" class="w-full h-full object-cover">`
+        }){% endblock %}
+    }
+
+    const clearAll = document.getElementById('clear-all')
+
+    function removeAllFiles(){
+        globalFiles.clear()
+        const fileList = document.getElementById('file-list')
+        fileList.innerHTML = ''
+
+        document.getElementById('file-input').value = '';
+        document.getElementById('file-name').innerText = '';
+
+        document.getElementById('clear-all').classList.add('hidden');
+        document.getElementById('download-all').classList.add('hidden');
+
+        showStatus('')
+    }
+
+    function removeFile(btn){
+        const row = btn.closest('[id^="file-row-"], [id^="row-"]');
+        if (row){
+            const match = row.id.match(/\d+$/)
+            if (match){
+                globalFiles.delete(parseInt(match[0]))
+            }
+            row.remove();
+        }
+
+        const remainingCards = document.querySelectorAll('[id^="file-row-"], [id^="row-"]');
+
+        if (remainingCards.length === 0){
+            globalFiles.clear()
+            document.getElementById('clear-all').classList.add('hidden');
+            document.getElementById('download-all').classList.add('hidden');
+
+            const fileInput = document.getElementById('file-input');
+            if (fileInput) fileInput.value = '';
+        }
+    }
+
+</script>
+{% block scripts %}
+{% endblock %}
+<footer class="max-w-4xl mx-auto px-6 py-10 mt-8 border-t" style="border-color:var(--line);">
+    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+
+        <div class="flex items-center gap-3.5">
+            <div class="w-9 h-9 flex items-center justify-center" style="border:1.5px solid var(--ink)">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                    <path d="M6 2h9l5 5v15H6V2z" stroke="var(--ink)" stroke-width="1.6" stroke-linejoin="round"/>
+                    <path d="M14 2v6h6" stroke="var(--ink)" stroke-width="1.6" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div>
+                <div class="font-display text-[17px] leading-none" style="font-weight:600">PDF Hawk</div>
+                <div class="font-mono text-[10.5px] mt-1" style="color:var(--ink-soft)">{% trans "Free online document converter" %}</div>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-6 font-mono text-[12px]" style="color:var(--ink-soft)">
+            <a class="underline hover:text-[var(--ink)]" style="cursor:pointer;">{% trans "Privacy Policy" %}</a>
+            <a class="underline hover:text-[var(--ink)]" style="cursor:pointer;">{% trans "Terms of Service" %}</a>
+            <span>© 2026 PDF Hawk</span>
+        </div>
+
+    </div>
+</footer>
+</body>
+</html>

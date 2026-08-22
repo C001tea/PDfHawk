@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}PDF to jpg/png{% endblock %}
+
+{% block meta_description %}{% trans 'Extract PDF pages or convert them into high-quality JPG/PNG images. Process files online in just a few clicks—no software installation required.' %}{% endblock %}
+
+{% block choosetype %}
+<div class="flex justify-center gap-6 mt-6">
+    <label class="inline-flex items-center cursor-pointer">
+        <input type="radio" name="format" value="png" checked class="form-radio text-blue-500">
+        <span class="ml-2 font-medium text-gray-700">PNG</span>
+    </label>
+
+    <label class="inline-flex items-center cursor-pointer">
+        <input type="radio" name="format" value="jpg" class="form-radio text-blue-500">
+        <span class="ml-2 font-medium text-gray-700">JPG</span>
+    </label>
+</div>
+{% endblock %}
+
+{% block tool_description %}
+<div class="mb-8">
+    <h1 class="font-display text-2xl mb-2" style="font-weight:600">{% trans "PDF to Image Converter" %}</h1>
+    <p class="text-[13.5px]" style="color:var(--ink-soft)">{% trans "Convert PDF pages into high-quality individual images. Simply upload up to 20 files and click the convert button." %}</p>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="mt-16 max-w-4xl mx-auto text-left space-y-12">
+
+    <section>
+        <h2 class="font-display text-2xl font-bold mb-4">{% trans "Why convert PDF to Image formats?" %}</h2>
+        <p class="text-[15px] leading-relaxed mb-4" style="color:var(--ink-soft)">
+            {% trans "While PDFs are the global standard for document sharing, they aren't always universally accepted. If you want to embed a specific page into a PowerPoint presentation, share a document snippet on social media, or upload ID scans to a verification portal, you need standard image files." %}
+        </p>
+        <p class="text-[15px] leading-relaxed" style="color:var(--ink-soft)">
+            {% trans "Our PDF to Image converter safely rasterizes your documents. It takes each individual page of your PDF and renders it into a high-quality, standalone picture. Whether you need a lossless" %} <span class="font-mono">PNG</span> {% trans "for sharp text or a compressed" %} <span class="font-mono">JPG</span> {% trans "for smaller file sizes, you get pixel-perfect results instantly." %}
+        </p>
+    </section>
+
+    <section>
+        <h3 class="font-display text-xl font-bold mb-4">{% trans "Common use cases" %}</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="p-5 border rounded-md" style="border-color:var(--line); background:var(--paper-card)">
+                <h4 class="font-semibold mb-2">{% trans "Web Forms & KYC Verification" %}</h4>
+                <p class="text-[14px]" style="color:var(--ink-soft)">{% trans "Many government portals, banks, and visa applications do not accept PDF uploads for security reasons. Easily convert your passport scans or utility bills into compliant JPG images." %}</p>
+            </div>
+            <div class="p-5 border rounded-md" style="border-color:var(--line); background:var(--paper-card)">
+                <h4 class="font-semibold mb-2">{% trans "Social Media & Design" %}</h4>
+                <p class="text-[14px]" style="color:var(--ink-soft)">{% trans "You cannot directly post a PDF to Instagram, Facebook, or Pinterest. Convert your digital flyers, infographics, or portfolio pages into high-resolution PNGs ready for publishing." %}</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="font-display text-xl font-bold mb-4">{% trans "High-fidelity rendering" %}</h3>
+        <ul class="space-y-3 text-[15px]" style="color:var(--ink-soft)">
+            <li class="flex items-start">
+                <span class="mr-3 text-lg" style="color:var(--stamp)">✓</span>
+                <div><strong>{% trans "4x Resolution Quality:" %}</strong> {% trans "We don't output blurry thumbnails. Our engine renders pages at high DPI (dots per inch), ensuring that small text, complex blueprints, and detailed graphs remain crystal clear." %}</div>
+            </li>
+            <li class="flex items-start">
+                <span class="mr-3 text-lg" style="color:var(--stamp)">✓</span>
+                <div><strong>{% trans "Smart ZIP Export:" %}</strong> {% trans "Converting a 50-page PDF? Your browser won't be flooded with 50 separate downloads. All your newly generated images are neatly packed into a single ZIP archive." %}</div>
+            </li>
+            <li class="flex items-start">
+                <span class="mr-3 text-lg" style="color:var(--stamp)">✓</span>
+                <div><strong>{% trans "Format Flexibility:" %}</strong> {% trans "Choose PNG to prevent text pixelation (lossless), or choose JPG to keep your overall file size as small as possible (lossy)." %}</div>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h3 class="font-display text-xl font-bold mb-6">{% trans "Frequently Asked Questions" %}</h3>
+
+        <div class="space-y-6">
+            <div>
+                <h4 class="font-semibold text-[15px] mb-1">{% trans "Should I choose PNG or JPG?" %}</h4>
+                <p class="text-[14px] leading-relaxed" style="color:var(--ink-soft)">{% trans "Choose " %}<strong>PNG</strong> {% trans "if your PDF contains a lot of text, flat graphics, charts, or logos. PNG uses lossless compression, meaning the edges of letters will remain incredibly sharp. Choose " %}<strong>JPG</strong> {% trans "if your PDF is mostly photographs or large scanned images, as it will significantly reduce the file size." %}</p>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-[15px] mb-1">{% trans "How do you handle multi-page PDFs?" %}</h4>
+                <p class="text-[14px] leading-relaxed" style="color:var(--ink-soft)">{% trans "Every page of your PDF becomes a separate image file. For example, if you upload a 5-page PDF, our server will generate 5 images. They are then automatically bundled into one ZIP file, which you can extract on your computer or smartphone." %}</p>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-[15px] mb-1">{% trans "Will the images be too large to send via email?" %}</h4>
+                <p class="text-[14px] leading-relaxed" style="color:var(--ink-soft)">{% trans "If you are worried about file limits when emailing attachments, we recommend selecting the JPG format. JPGs provide an excellent balance between visual quality and a compact footprint." %}</p>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-[15px] mb-1">{% trans "Is this tool secure for personal documents?</h4>
+                <p class="text-[14px] leading-relaxed" style="color:var(--ink-soft)">{% trans "Yes. We prioritize your privacy. Uploaded PDFs and the resulting image files are processed strictly by automated scripts. After 1 hour, all files associated with your session are permanently deleted from our servers. We do not retain, share, or analyze your data." %}</p>
+            </div>
+        </div>
+    </section>
+
+</div>
+{% endblock %}
+
+{% block fetch_url %}fetch(`${LANGUAGE_PREFIX}/pdf-to-image/`, {method: 'POST', body: formData}){% endblock %}
+
+{% block scripts %}
+{% endblock %}

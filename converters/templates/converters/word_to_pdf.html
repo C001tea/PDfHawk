@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}Word to PDF{% endblock %}
+
+{% block meta_description %}{% trans 'Save Word documents (DOC/DOCX) in PDF format. We guarantee the accurate preservation of your document's original fonts, indentation, and layout.' %}{% endblock %}
+
+{% block filetype %}<input type="file" name="file" id="file-input" class="hidden" accept=".docx" multiple>{% endblock %}
+{% block tool_description %}
+<div class="mb-8">
+    <h1 class="font-display text-2xl mb-2" style="font-weight:600">{% trans "Word to PDF Converter" %}</h1>
+    <p class="text-[13.5px]" style="color:var(--ink-soft)">{% trans "Convert Word documents into secure, universally compatible PDF files. Simply upload up to 20 files and click the convert button." %}</p>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="mt-16 max-w-4xl mx-auto text-left space-y-12">
+
+    <section>
+        <h2 class="font-display text-2xl font-bold mb-4">{% trans "Why convert Word documents to PDF?" %}</h2>
+        <p class="text-[15px] leading-relaxed mb-4" style="color:var(--ink-soft)">
+            {% trans "Microsoft Word is fantastic for drafting and editing, but it can be unreliable for sharing. A " %}<span class="font-mono">.docx</span> {% trans "file that looks perfectly formatted on your screen might suffer from broken margins, replaced fonts, or misaligned tables when opened on a colleague's Mac, a mobile phone, or in different software like Google Docs." %}
+        </p>
+        <p class="text-[15px] leading-relaxed" style="color:var(--ink-soft)">
+            {% trans 'Converting your Word document to PDF "locks" the layout in place. Our online Word to PDF converter ensures that your carefully crafted resumes, legal contracts, and academic assignments look exactly as you intended, preserving a professional appearance across any device or operating system.' %}
+        </p>
+    </section>
+
+    <section>
+        <h3 class="font-display text-xl font-bold mb-4">{% trans "Who needs this tool?" %}</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="p-5 border rounded-md" style="border-color:var(--line); background:var(--paper-card)">
+                <h4 class="font-semibold mb-2">{% trans "Job Seekers & Freelancers" %}</h4>
+                <p class="text-[14px]" style="color:var(--ink-soft)">{% trans "Never send a CV or an invoice in Word format. Recruiters and clients might open your file on mobile devices where Word formatting breaks. A PDF guarantees your document looks professional and prevents accidental edits." %}</p>
+            </div>
+            <div class="p-5 border rounded-md" style="border-color:var(--line); background:var(--paper-card)">
+                <h4 class="font-semibold mb-2">{% trans "Students & Educators" %}</h4>
+                <p class="text-[14px]" style="color:var(--ink-soft)">{% trans "Submit essays, research papers, and thesis drafts with confidence. Avoid grading penalties caused by pagination errors or missing charts when your professor uses a different version of Office." %}</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="font-display text-xl font-bold mb-4">{% trans "Flawless document rendering" %}</h3>
+        <ul class="space-y-3 text-[15px]" style="color:var(--ink-soft)">
+            <li class="flex items-start">
+                <span class="mr-3 text-lg" style="color:var(--stamp)">✓</span>
+                <div><strong>{% trans "Strict Layout Preservation:" %}</strong> {% trans "Our conversion engine accurately translates exact line spacing, margins, complex tables, and embedded graphics into the final PDF without shifting content." %}</div>
+            </li>
+            <li class="flex items-start">
+                <span class="mr-3 text-lg" style="color:var(--stamp)">✓</span>
+                <div><strong>{% trans "Universal Compatibility:" %}</strong> {% trans "Whether you are uploading a modern" %} <span class="font-mono">.docx</span> {% trans "file or an older legacy" %} <span class="font-mono">.doc</span> {% trans "document, our tool processes both seamlessly." %}</div>
+            </li>
+            <li class="flex items-start">
+                <span class="mr-3 text-lg" style="color:var(--stamp)">✓</span>
+                <div><strong>{% trans "No Watermarks:" %}</strong> {% trans "We believe in providing a clean, professional output. Your final PDF will be completely free of intrusive watermarks or forced branding." %}</div>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h3 class="font-display text-xl font-bold mb-6">{% trans "Frequently Asked Questions" %}</h3>
+
+        <div class="space-y-6">
+            <div>
+                <h4 class="font-semibold text-[15px] mb-1">{% trans 'Why use an online tool instead of "Save as PDF" in Word?' %}</h4>
+                <p class="text-[14px] leading-relaxed" style="color:var(--ink-soft)">{% trans "While desktop Word has a built-in export feature, you might be working on a mobile device, using a borrowed computer, or simply don't have a paid Microsoft Office license installed. Our browser-based tool provides a fast, free alternative without requiring any heavy software." %}</p>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-[15px] mb-1">{% trans "Will my custom fonts display correctly?" %}</h4>
+                <p class="text-[14px] leading-relaxed" style="color:var(--ink-soft)">{% trans "Yes. Our rendering engine automatically embeds standard formatting directly into the PDF. This ensures the text remains identical, even if the person opening the PDF doesn't have those specific fonts installed on their machine." %}</p>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-[15px] mb-1">{% trans "Can I convert multiple Word documents at once?" %}</h4>
+                <p class="text-[14px] leading-relaxed" style="color:var(--ink-soft)">{% trans "Absolutely. You can drag and drop multiple Word files into the upload zone. Our server processes them asynchronously, and you can download all the resulting PDFs together in a single ZIP archive, saving you time." %}</p>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-[15px] mb-1">{% trans "Is my private information protected?" %}</h4>
+                <p class="text-[14px] leading-relaxed" style="color:var(--ink-soft)">{% trans "Security is our priority. Your documents are uploaded via a secure connection and processed entirely by automated scripts. No human ever accesses your files. Both the original Word document and the generated PDF are permanently and automatically deleted from our servers after one hour." %}</p>
+            </div>
+        </div>
+    </section>
+
+</div>
+{% endblock %}
+
+{% block fetch_url %}fetch(`${LANGUAGE_PREFIX}/word-to-pdf/`, {method: 'POST', body: formData}){% endblock %}
+{% block get_file_icon %}getFileIcon(file, index);{% endblock %}
+
+{% block scripts %}
+{% endblock %}

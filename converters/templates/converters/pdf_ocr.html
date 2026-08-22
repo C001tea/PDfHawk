@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}OCR PDF{% endblock %}
+
+{% block meta_description %}{% trans 'Free online OCR converter. Recognize and extract text from scanned PDF documents and images for further editing.' %}{% endblock %}
+
+{% block filetype %}<input type="file" name="file" id="file-input" class="hidden" accept=".pdf" multiple>{% endblock %}
+
+{% block tool_description %}
+<div class="mb-8">
+    <h1 class="font-display text-2xl mb-2" style="font-weight:600">{% trans "PDF OCR Tool" %}</h1>
+    <p class="text-[13.5px]" style="color:var(--ink-soft)">{% trans "Extract editable text from scanned PDF documents or images. Simply upload up to 20 files and click the convert button." %}</p>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="mt-16 max-w-4xl mx-auto text-left space-y-12">
+
+    <section>
+        <h2 class="font-display text-2xl font-bold mb-4">{% trans "Why use an OCR PDF tool?" %}</h2>
+        <p class="text-[15px] leading-relaxed mb-4" style="color:var(--ink-soft)">
+            {% trans "Not all PDFs are created equal. When you scan a physical paper document or take a photo of a page, the resulting PDF is essentially just a flat image. You cannot select the text, copy a paragraph, or search for specific keywords. The information is locked." %}
+        </p>
+        <p class="text-[15px] leading-relaxed" style="color:var(--ink-soft)">
+            {% trans "Our Optical Character Recognition (OCR) engine acts as a digital translator. It scans the visual layer of your document, identifies individual letters and words, and extracts them into a readable, editable format. Instead of manually retyping pages of text, you can digitize your documents in seconds." %}
+        </p>
+    </section>
+
+    <section>
+        <h3 class="font-display text-xl font-bold mb-4">{% trans "Who benefits from OCR?" %}</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="p-5 border rounded-md" style="border-color:var(--line); background:var(--paper-card)">
+                <h4 class="font-semibold mb-2">{% trans "University Students & Academics" %}</h4>
+                <p class="text-[14px]" style="color:var(--ink-soft)">{% trans "Stop wasting time retyping material. Instantly extract text from scanned library books, printed lab reports, and physical lecture notes to quote them directly in your own assignments and research papers." %}</p>
+            </div>
+            <div class="p-5 border rounded-md" style="border-color:var(--line); background:var(--paper-card)">
+                <h4 class="font-semibold mb-2">{% trans "Accounting & Administration" %}</h4>
+                <p class="text-[14px]" style="color:var(--ink-soft)">{% trans "Digitize printed invoices, paper receipts, and physical contracts. Transform unsearchable paper archives into accessible digital text that you can easily copy into spreadsheets, databases, or ERP systems." %}</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="font-display text-xl font-bold mb-4">{% trans "Advanced text extraction" %}</h3>
+        <ul class="space-y-3 text-[15px]" style="color:var(--ink-soft)">
+            <li class="flex items-start">
+                <span class="mr-3 text-lg" style="color:var(--stamp)">✓</span>
+                <div><strong>{% trans "Multi-Language Recognition:" %}</strong> {% trans "Our engine doesn't just read English. It accurately identifies characters across multiple alphabets, making it perfect for international documents and localized texts." %}</div>
+            </li>
+            <li class="flex items-start">
+                <span class="mr-3 text-lg" style="color:var(--stamp)">✓</span>
+                <div><strong>{% trans "High Accuracy Algorithm:" %}</strong> {% trans 'We utilize advanced machine learning patterns to distinguish between similar-looking characters (like the number "1", capital "I", and lowercase "l") even in lower-quality scans.' %}</div>
+            </li>
+            <li class="flex items-start">
+                <span class="mr-3 text-lg" style="color:var(--stamp)">✓</span>
+                <div><strong>{% trans "Asynchronous Processing:" %}</strong> {% trans "OCR is a computationally heavy task. Our server handles the intensive processing in the background, ensuring your browser remains responsive while the text is being extracted." %}</div>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h3 class="font-display text-xl font-bold mb-6">{% trans "Frequently Asked Questions" %}</h3>
+
+        <div class="space-y-6">
+            <div>
+                <h4 class="font-semibold text-[15px] mb-1">{% trans "What does OCR actually stand for?" %}</h4>
+                <p class="text-[14px] leading-relaxed" style="color:var(--ink-soft)">{% trans "OCR stands for Optical Character Recognition. It is a technology that recognizes text within a digital image. It is commonly used to recognize text in scanned documents and photos, converting a physical paper record into editable digital data." %}</p>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-[15px] mb-1">{% trans "Can the tool read handwritten notes?" %}</h4>
+                <p class="text-[14px] leading-relaxed" style="color:var(--ink-soft)">{% trans "Our OCR engine is primarily optimized for printed, typed text (like books, printed reports, and official documents). While it may recognize exceptionally clear and block-lettered handwriting, cursive or messy handwritten notes will generally produce inaccurate results." %}</p>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-[15px] mb-1">{% trans "What affects the quality of the extracted text?" %}</h4>
+                <p class="text-[14px] leading-relaxed" style="color:var(--ink-soft)">The golden rule of OCR is "garbage in, garbage out". For the best results, ensure your original scan is clear, has good contrast (dark text on a light background), and is not physically crumpled or photographed at a severe angle. Blurry images will decrease accuracy." %}</p>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-[15px] mb-1">{% trans "Are my scanned documents kept private?" %}</h4>
+                <p class="text-[14px] leading-relaxed" style="color:var(--ink-soft)">{% trans "Absolutely. We know scanned documents often contain sensitive personal or business information. Your files are processed entirely by automated algorithms without human interaction. All uploads and generated text files are permanently deleted from our servers one hour after processing." %}</p>
+            </div>
+        </div>
+    </section>
+
+</div>
+{% endblock %}
+
+{% block fetch_url %}fetch(`${LANGUAGE_PREFIX}/pdf-ocr/`, {method: 'POST', body: formData}){% endblock %}
+
+{% block scripts %}
+{% endblock %}

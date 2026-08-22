@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}PDF to word{% endblock %}
+
+{% block filetype %}<input type="file" name="file" id="file-input" class="hidden" accept=".pdf" multiple>{% endblock %}
+
+{% block meta_description %}{% trans 'Convert PDF to editable Word (DOCX) without losing formatting. Accurate text and table recognition. Fast, free, and secure.' %}{% endblock %}
+
+{% block tool_description %}
+<div class="mb-8">
+    <h1 class="font-display text-2xl mb-2" style="font-weight:600">{% trans "PDF to Word Converter" %}</h1>
+    <p class="text-[13.5px]" style="color:var(--ink-soft)">{% trans "Convert PDF files to editable Word documents. Simply upload up to 20 files and click the convert button." %}</p>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="mt-16 max-w-4xl mx-auto text-left space-y-12">
+
+    <section>
+        <h2 class="font-display text-2xl font-bold mb-4">{% trans "Why convert PDF to Word?" %}</h2>
+        <p class="text-[15px] leading-relaxed mb-4" style="color:var(--ink-soft)">
+            {% trans "PDFs are perfect for sharing and printing because they lock your formatting in place. But what happens when you need to fix a typo in a contract, update a CV, or extract data from a 50-page university report? Retyping everything manually is a waste of time." %}
+        </p>
+        <p class="text-[15px] leading-relaxed" style="color:var(--ink-soft)">
+            {% trans "Our PDF to Word converter acts as a bridge. It reverse-engineers the PDF document, identifying text blocks, tables, and images, and reconstructs them into a fully editable Microsoft Word" %} (<span class="font-mono">.docx</span>) {% trans "file. You get your document back, ready for editing, without losing the original layout." %}
+        </p>
+    </section>
+
+    <section>
+        <h3 class="font-display text-xl font-bold mb-4">{% trans "Who uses this tool?" %}</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="p-5 border rounded-md" style="border-color:var(--line); background:var(--paper-card)">
+                <h4 class="font-semibold mb-2">{% trans "Students & Researchers" %}</h4>
+                <p class="text-[14px]" style="color:var(--ink-soft)">{% trans "Easily extract text from scanned lecture notes, textbook chapters, or research papers to include in your own thesis or assignments without manual copying." %}</p>
+            </div>
+            <div class="p-5 border rounded-md" style="border-color:var(--line); background:var(--paper-card)">
+                <h4 class="font-semibold mb-2">{% trans "Office & Legal Professionals" %}</h4>
+                <p class="text-[14px]" style="color:var(--ink-soft)">{% trans "Turn locked non-disclosure agreements (NDAs), invoices, and corporate reports back into editable drafts. Revise terms or correct figures instantly." %}</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="font-display text-xl font-bold mb-4">{% trans "Built for speed and accuracy" %}</h3>
+        <ul class="space-y-3 text-[15px]" style="color:var(--ink-soft)">
+            <li class="flex items-start">
+                <span class="mr-3 text-lg" style="color:var(--stamp)">✓</span>
+                <div><strong>{% trans "Smart Layout Retention:" %}</strong> {% trans "We don't just dump text into a file. Our engine respects paragraph breaks, font styles, and table structures so you don't spend hours fixing formatting." %}</div>
+            </li>
+            <li class="flex items-start">
+                <span class="mr-3 text-lg" style="color:var(--stamp)">✓</span>
+                <div><strong>{% trans "Scanned Document Support (OCR):" %}</strong> Uploaded a photo or a scanned document? Our built-in Optical Character Recognition will "read" the image and extract the actual text into Word." %}</div>
+            </li>
+            <li class="flex items-start">
+                <span class="mr-3 text-lg" style="color:var(--stamp)">✓</span>
+                <div><strong>{% trans "Background Batch Processing:" %}</strong> {% trans "Converting 20 files at once? Your browser won't freeze. Our asynchronous servers handle heavy lifting in the background—just wait for the ZIP download button to appear." %}</div>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h3 class="font-display text-xl font-bold mb-6">{% trans "Frequently Asked Questions" %}</h3>
+
+        <div class="space-y-6">
+            <div>
+                <h4 class="font-semibold text-[15px] mb-1">{% trans "Is my sensitive data safe on your servers?" %}</h4>
+                <p class="text-[14px] leading-relaxed" style="color:var(--ink-soft)">{% trans "Absolutely. We process files automatically. No human eyes ever see your documents. Once the conversion is complete, the original PDF and the generated Word file are permanently wiped from our database after 1 hour. Your files are never stored beyond the 1-hour window." %}</p>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-[15px] mb-1">{% trans "Will my tables and images stay in place?" %}</h4>
+                <p class="text-[14px] leading-relaxed" style="color:var(--ink-soft)">{% trans "In 95% of cases, yes. Standard tables, headers, and images are converted perfectly. However, highly complex graphical PDFs (like magazines with overlapping layers) might require minor manual adjustments in Word after conversion." %}</p>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-[15px] mb-1">{% trans "Why is this completely free? Are there hidden limits?" %}</h4>
+                <p class="text-[14px] leading-relaxed" style="color:var(--ink-soft)">{% trans "We believe basic document utility should be accessible. Currently, you can process up to 20 files per session without creating an account." %} <!--We sustain the servers through minimal, non-intrusive advertising.--></p>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-[15px] mb-1">{% trans "Can I use this on a Mac or mobile phone?" %}</h4>
+                <p class="text-[14px] leading-relaxed" style="color:var(--ink-soft)">{% trans "Yes, the tool is entirely browser-based. Whether you are using Windows, macOS, Linux, iOS, or Android, as long as you have an internet connection, you can convert your files." %}</p>
+            </div>
+        </div>
+    </section>
+
+</div>
+{% endblock %}
+
+{% block fetch_url %}fetch(`${LANGUAGE_PREFIX}/pdf-to-word/`, {method: 'POST', body: formData}){% endblock %}
+
+{% block scripts %}
+
+{% endblock %}

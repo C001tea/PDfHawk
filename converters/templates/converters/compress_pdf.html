@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}Compress PDF{% endblock %}
+
+{% block meta_description %}{% trans 'Reduce PDF file sizes without losing quality. Ideal for quickly emailing documents or uploading them to websites in seconds.' %}{% endblock %}
+
+{% block filetype %}<input type="file" name="file" id="file-input" class="hidden" accept=".pdf" multiple>{% endblock %}
+
+{% block tool_description %}
+<div class="mb-8">
+    <h1 class="font-display text-2xl mb-2" style="font-weight:600">{% trans "PDF Compressor" %}</h1>
+    <p class="text-[13.5px]" style="color:var(--ink-soft)">{% trans "Reduce the size of your PDF files for easier sharing and sending. Simply upload up to 20 files and click the convert button." %}</p>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="mt-16 max-w-4xl mx-auto text-left space-y-12">
+
+    <section>
+        <h2 class="font-display text-2xl font-bold mb-4">{% trans "Why compress PDF files?" %}</h2>
+        <p class="text-[15px] leading-relaxed mb-4" style="color:var(--ink-soft)">
+            {% trans 'Have you ever tried to email a crucial document or upload your CV to a job portal, only to be blocked by a "File size too large" error? PDFs can easily bloat to massive sizes, especially when they contain high-resolution scanned images, vector graphics, or embedded fonts.' %}
+        </p>
+        <p class="text-[15px] leading-relaxed" style="color:var(--ink-soft)">
+            {% trans "Our online PDF Compressor solves this by intelligently shrinking your documents. By analyzing the internal structure of your file, it safely removes redundant data and optimizes images, significantly reducing the file size while keeping your text sharp and your graphics perfectly readable." %}
+        </p>
+    </section>
+
+    <section>
+        <h3 class="font-display text-xl font-bold mb-4">{% trans "Who needs a PDF compressor?" %}</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="p-5 border rounded-md" style="border-color:var(--line); background:var(--paper-card)">
+                <h4 class="font-semibold mb-2">{% trans "Job Seekers & Creatives" %}</h4>
+                <p class="text-[14px]" style="color:var(--ink-soft)">{% trans "Design portfolios and visual resumes are notoriously heavy. Compress your application documents to meet the strict 2MB or 5MB limits required by corporate HR systems and freelance platforms." %}</p>
+            </div>
+            <div class="p-5 border rounded-md" style="border-color:var(--line); background:var(--paper-card)">
+                <h4 class="font-semibold mb-2">{% trans "Lawyers & Office Workers" %}</h4>
+                <p class="text-[14px]" style="color:var(--ink-soft)">{% trans "Email providers like Gmail or Outlook restrict attachments to 20-25MB. Seamlessly shrink massive court bundles, scanned contracts, and annual reports to ensure they reach your clients' inboxes." %}</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="font-display text-xl font-bold mb-4">{% trans "Smart optimization algorithms" %}</h3>
+        <ul class="space-y-3 text-[15px]" style="color:var(--ink-soft)">
+            <li class="flex items-start">
+                <span class="mr-3 text-lg" style="color:var(--stamp)">✓</span>
+                <div><strong>{% trans "Intelligent Image Downsampling:" %}</strong> {% trans "We scale down unnecessarily large background images and photographs to an optimal web resolution (DPI) without creating visible pixelation." %}</div>
+            </li>
+            <li class="flex items-start">
+                <span class="mr-3 text-lg" style="color:var(--stamp)">✓</span>
+                <div><strong>{% trans "Font & Metadata Cleanup:" %}</strong> {% trans "The compressor automatically strips out hidden junk data, unused structural tags, and embedded fonts that aren't actually required to display your document." %}</div>
+            </li>
+            <li class="flex items-start">
+                <span class="mr-3 text-lg" style="color:var(--stamp)">✓</span>
+                <div><strong>{% trans "Browser-Friendly Results:" %}</strong> {% trans "Compressed PDFs load significantly faster on mobile devices and directly within web browsers, improving the experience for whoever reads your file." %}</div>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h3 class="font-display text-xl font-bold mb-6">{% trans "Frequently Asked Questions" %}</h3>
+
+        <div class="space-y-6">
+            <div>
+                <h4 class="font-semibold text-[15px] mb-1">{% trans "Will my PDF look blurry after compression?" %}</h4>
+                <p class="text-[14px] leading-relaxed" style="color:var(--ink-soft)">{% trans "No. The text in your PDF remains perfectly sharp because text is vector-based. Only the images inside the document are optimized. We use a balanced compression profile designed to drastically lower file size while keeping images clear enough for professional reading and printing." %}</p>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-[15px] mb-1">{% trans "How much smaller will my file get?" %}</h4>
+                <p class="text-[14px] leading-relaxed" style="color:var(--ink-soft)">{% trans "It entirely depends on what is inside your PDF. If your document is made of raw, uncompressed camera photos, we can often shrink it by up to 90%. If it is a purely text-based document that is already well-optimized, the size reduction will be minimal." %}</p>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-[15px] mb-1">{% trans "Why is my PDF so large in the first place?" %}</h4>
+                <p class="text-[14px] leading-relaxed" style="color:var(--ink-soft)">{% trans 'Most PDFs become oversized because they were created from high-resolution scanner hardware, exported with "print-quality" presets from software like Adobe Illustrator, or contain duplicate font libraries.' %}</p>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-[15px] mb-1">{% trans "Are my confidential documents secure?" %}</h4>
+                <p class="text-[14px] leading-relaxed" style="color:var(--ink-soft)">{% trans "We treat your privacy seriously. Your files are processed securely through automated software. Neither the original heavy file nor the compressed result is ever read by humans. All data is automatically wiped from our cloud servers exactly one hour after upload." %}</p>
+            </div>
+        </div>
+    </section>
+
+</div>
+{% endblock %}
+
+{% block fetch_url %}fetch(`${LANGUAGE_PREFIX}/compress-pdf/`, {method: 'POST', body: formData}){% endblock %}
+
+{% block scripts %}
+{% endblock %}

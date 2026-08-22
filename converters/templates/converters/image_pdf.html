@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}Image to PDF{% endblock %}
+
+{% block meta_description %}{% trans 'Convert images and photos (JPG, PNG) into a single PDF file. Fast uploading, easy page sorting, and instant results.' %}{% endblock %}
+
+{% block filetype %}<input type="file" name="file" id="file-input" class="hidden" accept=".png" multiple>{% endblock %}
+
+{% block tool_name %}image-pdf{% endblock %}
+
+{% block tool_description %}
+<div class="mb-8">
+    <h1 class="font-display text-2xl mb-2" style="font-weight:600">{% trans "Image to PDF Converter" %}</h1>
+    <p class="text-[13.5px]" style="color:var(--ink-soft)">{% trans "Turn photos and images into a single PDF document. Simply upload up to 20 files and click the convert button." %}</p>
+</div>
+{% endblock %}
+{% block content %}
+<div class="mt-16 max-w-4xl mx-auto text-left space-y-12">
+
+    <section>
+        <h2 class="font-display text-2xl font-bold mb-4">{% trans "Why convert Images to PDF?" %}</h2>
+        <p class="text-[15px] leading-relaxed mb-4" style="color:var(--ink-soft)">
+            {% trans "Sharing a single photograph is easy, but sending a dozen separate images of a scanned document, a design portfolio, or monthly receipts is a guaranteed way to confuse the recipient. Image formats like JPG and PNG do not support multiple pages, meaning they easily get lost or viewed out of order." %}
+        </p>
+        <p class="text-[15px] leading-relaxed" style="color:var(--ink-soft)">
+            {% trans "Our Image to PDF converter solves this by binding your separate pictures into one neat, multi-page document. By converting your photos into a universally accepted PDF, you ensure that your files are viewed exactly in the sequence you intended, formatted perfectly for both screen reading and printing." %}
+        </p>
+    </section>
+
+    <section>
+        <h3 class="font-display text-xl font-bold mb-4">{% trans "Common use cases" %}</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="p-5 border rounded-md" style="border-color:var(--line); background:var(--paper-card)">
+                <h4 class="font-semibold mb-2">{% trans "Freelancers & Designers" %}</h4>
+                <p class="text-[14px]" style="color:var(--ink-soft)">{% trans "Combine individual design mockups, digital illustrations, or photography samples into a single, cohesive PDF portfolio. A multi-page PDF looks much more professional to clients than a ZIP file full of scattered images." %}</p>
+            </div>
+            <div class="p-5 border rounded-md" style="border-color:var(--line); background:var(--paper-card)">
+                <h4 class="font-semibold mb-2">{% trans "Everyday Admin & Expenses" %}</h4>
+                <p class="text-[14px]" style="color:var(--ink-soft)">{% trans "Took photos of your receipts, medical records, or ID cards with your smartphone? Merge those JPGs into one single PDF document before uploading them to your company's HR portal or government websites." %}</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="font-display text-xl font-bold mb-4">{% trans "Flexible and fast compilation" %}</h3>
+        <ul class="space-y-3 text-[15px]" style="color:var(--ink-soft)">
+            <li class="flex items-start">
+                <span class="mr-3 text-lg" style="color:var(--stamp)">✓</span>
+                <div><strong>{% trans "Drag-and-Drop Reordering:" %}</strong> {% trans "Upload your photos and easily drag their thumbnails to arrange them in the correct order. The first image becomes page one, the second becomes page two, and so on." %}</div>
+            </li>
+            <li class="flex items-start">
+                <span class="mr-3 text-lg" style="color:var(--stamp)">✓</span>
+                <div><strong>{% trans "Format Agnostic:" %}</strong> {% trans "You don't have to choose just one format. You can upload a mix of both" %}<span class="font-mono">PNG</span> {% trans "graphics and" %} <span class="font-mono">JPG</span> {% trans "photographs at the same time and combine them into the same PDF." %}</div>
+            </li>
+            <li class="flex items-start">
+                <span class="mr-3 text-lg" style="color:var(--stamp)">✓</span>
+                <div><strong>{% trans "High-Fidelity Embedding:" %}</strong> {% trans "We embed your images directly into the document pages without applying harsh secondary compression, ensuring your photos look just as vibrant in the PDF as they do on your phone.</div>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h3 class="font-display text-xl font-bold mb-6">{% trans "Frequently Asked Questions" %}</h3>
+
+        <div class="space-y-6">
+            <div>
+                <h4 class="font-semibold text-[15px] mb-1">{% trans "Can I mix different image sizes?" %}</h4>
+                <p class="text-[14px] leading-relaxed" style="color:var(--ink-soft)">{% trans "Yes. Our converter automatically centers and scales your images to fit standard PDF page dimensions while maintaining their original aspect ratio. Your images won't be stretched or distorted." %}</p>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-[15px] mb-1">{% trans "Will this reduce the quality of my images?" %}</h4>
+                <p class="text-[14px] leading-relaxed" style="color:var(--ink-soft)">{% trans "No. Our tool is designed to compile files, not compress them aggressively. The resulting PDF will retain the high resolution of your original PNG or JPG uploads, making it perfectly suitable for high-quality printing." %}</p>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-[15px] mb-1">{% trans "How many images can I put into one PDF?" %}</h4>
+                <p class="text-[14px] leading-relaxed" style="color:var(--ink-soft)">{% trans "You can upload and convert up to 20 images per session. Each uploaded image will automatically be assigned its own individual page in the final PDF document." %}</p>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-[15px] mb-1">{% trans "Are my personal photos kept private?" %}</h4>
+                <p class="text-[14px] leading-relaxed" style="color:var(--ink-soft)">{% trans "Absolutely. We process all uploads automatically on secure servers. Nobody has manual access to your photos. For your peace of mind, all original images and the generated PDF are permanently deleted from our servers one hour after conversion." %}</p>
+            </div>
+        </div>
+    </section>
+
+</div>
+{% endblock %}
+
+{% block fetch_url %}fetch(`${LANGUAGE_PREFIX}/image-pdf/`, {method: 'POST', body: formData}){% endblock %}
+
+{% block showdownload %}{% endblock %}
+{% block showconverting %}{% endblock %}
+
+{% block scripts %}
+{% endblock %}

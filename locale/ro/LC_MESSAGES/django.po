@@ -1,0 +1,1429 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-15 16:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
+"2:1));\n"
+
+#: Filetools/settings.py:132
+msgid "English"
+msgstr ""
+
+#: Filetools/settings.py:133
+msgid "Russian"
+msgstr ""
+
+#: Filetools/settings.py:134
+msgid "Romanian"
+msgstr ""
+
+#: converters/templates/base.html:149
+msgid "DOCUMENT PROCESSING SERVICE"
+msgstr "SERVICIU DE PROCESARE A DOCUMENTELOR"
+
+#: converters/templates/base.html:166
+msgid "NO REGISTRATION REQUIRED"
+msgstr "FĂRĂ ÎNREGISTRARE"
+
+#: converters/templates/base.html:166
+msgid "FILES REMOVED AFTER 1 HOUR"
+msgstr "FIȘIERE ȘTERSE DUPĂ 1 ORĂ"
+
+#: converters/templates/base.html:174
+msgid "Compress"
+msgstr "Comprimare"
+
+#: converters/templates/base.html:175
+msgid "OCR"
+msgstr "OCR"
+
+#: converters/templates/base.html:177
+msgid "Join PDF"
+msgstr "Unire PDF"
+
+#: converters/templates/base.html:187
+msgid "Drop files here"
+msgstr "Plasați fișierele aici"
+
+#: converters/templates/base.html:188
+msgid "or"
+msgstr "sau"
+
+#: converters/templates/base.html:192
+msgid "Choose file"
+msgstr "Alegeți fișierul"
+
+#: converters/templates/base.html:198
+msgid "Clear all"
+msgstr "Șterge tot"
+
+#: converters/templates/base.html:211
+msgid "Convert"
+msgstr "Convertește"
+
+#: converters/templates/base.html:216
+msgid "Download all"
+msgstr "Descărcați tot"
+
+#: converters/templates/base.html:222
+msgid "Converting files..."
+msgstr "Se convertesc fișierele..."
+
+#: converters/templates/base.html:501
+msgid "Free online document converter"
+msgstr "Convertor de documente online gratuit"
+
+#: converters/templates/base.html:506
+msgid "Privacy Policy"
+msgstr "Politica de confidențialitate"
+
+#: converters/templates/base.html:507
+msgid "Terms of Service"
+msgstr "Termeni și condiții"
+
+#: converters/templates/converters/compress_pdf.html:5
+msgid ""
+"Reduce PDF file sizes without losing quality. Ideal for quickly emailing "
+"documents or uploading them to websites in seconds."
+msgstr "Redu dimensiunea fișierelor PDF fără a pierde din calitatea citirii. Perfect pentru trimiterea rapidă a documentelor prin email online."
+
+#: converters/templates/converters/compress_pdf.html:11
+msgid "PDF Compressor"
+msgstr "Compresor PDF"
+
+#: converters/templates/converters/compress_pdf.html:12
+msgid ""
+"Reduce the size of your PDF files for easier sharing and sending. Simply "
+"upload up to 20 files and click the convert button."
+msgstr ""
+"Redu dimensiunea fișierelor PDF pentru a le partaja și trimite mai ușor. Pur "
+"și simplu încarcă până la 20 de fișiere și apasă butonul de conversie."
+
+#: converters/templates/converters/compress_pdf.html:20
+msgid "Why compress PDF files?"
+msgstr "De ce să comprimi fișierele PDF?"
+
+#: converters/templates/converters/compress_pdf.html:22
+msgid ""
+"Have you ever tried to email a crucial document or upload your CV to a job "
+"portal, only to be blocked by a \"File size too large\" error? PDFs can "
+"easily bloat to massive sizes, especially when they contain high-resolution "
+"scanned images, vector graphics, or embedded fonts."
+msgstr ""
+"Ai încercat vreodată să trimiți un document important prin e-mail sau să îți "
+"încarci CV-ul pe un portal de locuri de muncă, doar pentru a fi blocat de o "
+"eroare de tip „Fișier prea mare”? Fișierul PDF poate crește cu ușurință la "
+"dimensiuni masive, în special atunci când conține imagini scanate de înaltă "
+"rezoluție, grafică vectorială sau fonturi încorporate."
+
+#: converters/templates/converters/compress_pdf.html:25
+msgid ""
+"Our online PDF Compressor solves this by intelligently shrinking your "
+"documents. By analyzing the internal structure of your file, it safely "
+"removes redundant data and optimizes images, significantly reducing the file "
+"size while keeping your text sharp and your graphics perfectly readable."
+msgstr ""
+"Compresorul nostru PDF online rezolvă această problemă micșorându-ți "
+"documentele în mod inteligent. Analizând structura internă a fișierului tău, "
+"acesta elimină în siguranță datele redundante și optimizează imaginile, "
+"reducând semnificativ dimensiunea fișierului, menținând în același timp "
+"textul clar și grafica perfect vizibilă."
+
+#: converters/templates/converters/compress_pdf.html:30
+msgid "Who needs a PDF compressor?"
+msgstr "Cine are nevoie de un compresor PDF?"
+
+#: converters/templates/converters/compress_pdf.html:33
+msgid "Job Seekers & Creatives"
+msgstr "Persoane în căutarea unui loc de muncă și creativi"
+
+#: converters/templates/converters/compress_pdf.html:34
+msgid ""
+"Design portfolios and visual resumes are notoriously heavy. Compress your "
+"application documents to meet the strict 2MB or 5MB limits required by "
+"corporate HR systems and freelance platforms."
+msgstr ""
+"Portofoliile de design și CV-urile vizuale sunt în mod notoriu grele. "
+"Comprimă-ți documentele de aplicație pentru a respecta limitele stricte de 2 "
+"MB sau 5 MB impuse de sistemele de resurse umane corporative și platformele "
+"de freelancing."
+
+#: converters/templates/converters/compress_pdf.html:37
+msgid "Lawyers & Office Workers"
+msgstr "Avocați și personal de birou"
+
+#: converters/templates/converters/compress_pdf.html:38
+msgid ""
+"Email providers like Gmail or Outlook restrict attachments to 20-25MB. "
+"Seamlessly shrink massive court bundles, scanned contracts, and annual "
+"reports to ensure they reach your clients' inboxes."
+msgstr ""
+"Furnizorii de e-mail precum Gmail sau Outlook limitează atașamentele la "
+"20-25 MB. Redu cu ușurință pachete masive de documente pentru instanță, "
+"contracte scanate și rapoarte anuale pentru a te asigura că ajung în inboxul "
+"clienților tăi."
+
+#: converters/templates/converters/compress_pdf.html:44
+msgid "Smart optimization algorithms"
+msgstr "Algoritmi de optimizare inteligenți"
+
+#: converters/templates/converters/compress_pdf.html:48
+msgid "Intelligent Image Downsampling:"
+msgstr "Reducerea inteligentă a rezoluției imaginilor:"
+
+#: converters/templates/converters/compress_pdf.html:48
+msgid ""
+"We scale down unnecessarily large background images and photographs to an "
+"optimal web resolution (DPI) without creating visible pixelation."
+msgstr ""
+"Reducem dimensiunile imaginilor de fundal și ale fotografiilor inutile de "
+"mari la o rezoluție web optimă (DPI), fără a crea o pixelare vizibilă."
+
+#: converters/templates/converters/compress_pdf.html:52
+msgid "Font & Metadata Cleanup:"
+msgstr "Curățarea fonturilor și a metadatelor:"
+
+#: converters/templates/converters/compress_pdf.html:52
+msgid ""
+"The compressor automatically strips out hidden junk data, unused structural "
+"tags, and embedded fonts that aren't actually required to display your "
+"document."
+msgstr ""
+"Compresorul elimină automat datele inutile ascunse, etichetele structurale "
+"neutilizate și fonturile încorporate care nu sunt de fapt necesare pentru "
+"afișarea documentului tău."
+
+#: converters/templates/converters/compress_pdf.html:56
+msgid "Browser-Friendly Results:"
+msgstr "Rezultate compatibile cu browserul:"
+
+#: converters/templates/converters/compress_pdf.html:56
+msgid ""
+"Compressed PDFs load significantly faster on mobile devices and directly "
+"within web browsers, improving the experience for whoever reads your file."
+msgstr ""
+"Fișierele PDF comprimate se încarcă semnificativ mai repede pe dispozitivele "
+"mobile și direct în browserele web, îmbunătățind experiența oricui citește "
+"fișierul tău."
+
+#: converters/templates/converters/compress_pdf.html:62
+#: converters/templates/converters/image_pdf.html:63
+#: converters/templates/converters/join_pdf.html:62
+#: converters/templates/converters/pdf_ocr.html:62
+#: converters/templates/converters/pdf_to_pngjpg.html:74
+#: converters/templates/converters/pdf_to_word.html:63
+#: converters/templates/converters/word_to_pdf.html:61
+msgid "Frequently Asked Questions"
+msgstr "Întrebări frecvente"
+
+#: converters/templates/converters/compress_pdf.html:66
+msgid "Will my PDF look blurry after compression?"
+msgstr "Va arăta PDF-ul meu neclar după compresie?"
+
+#: converters/templates/converters/compress_pdf.html:67
+msgid ""
+"No. The text in your PDF remains perfectly sharp because text is vector-"
+"based. Only the images inside the document are optimized. We use a balanced "
+"compression profile designed to drastically lower file size while keeping "
+"images clear enough for professional reading and printing."
+msgstr ""
+"Nu. Textul din PDF-ul tău rămâne perfect clar, deoarece textul este bazat pe "
+"vectori. Doar imaginile din interiorul documentului sunt optimizate. Folosim "
+"un profil de compresie echilibrat, conceput pentru a reduce drastic "
+"dimensiunea fișierului, menținând în același timp imaginile suficient de "
+"clare pentru citire și imprimare profesională."
+
+#: converters/templates/converters/compress_pdf.html:71
+msgid "How much smaller will my file get?"
+msgstr "Cât de mult se va micșora fișierul meu?"
+
+#: converters/templates/converters/compress_pdf.html:72
+#, python-format
+msgid ""
+"It entirely depends on what is inside your PDF. If your document is made of "
+"raw, uncompressed camera photos, we can often shrink it by up to 90%%. If it "
+"is a purely text-based document that is already well-optimized, the size "
+"reduction will be minimal."
+msgstr ""
+"Depinde în întregime de ceea ce se află în interiorul PDF-ului tău. Dacă "
+"documentul tău este alcătuit din fotografii brute, necomprimate de la "
+"cameră, îl putem reduce adesea cu până la 90%%. Dacă este un document bazat "
+"exclusiv pe text, care este deja bine optimizat, reducerea dimensiunii va fi "
+"minimă."
+
+#: converters/templates/converters/compress_pdf.html:76
+msgid "Why is my PDF so large in the first place?"
+msgstr "De ce este PDF-ul meu atât de mare în primul rând?"
+
+#: converters/templates/converters/compress_pdf.html:77
+msgid ""
+"Most PDFs become oversized because they were created from high-resolution "
+"scanner hardware, exported with \"print-quality\" presets from software like "
+"Adobe Illustrator, or contain duplicate font libraries."
+msgstr ""
+"Majoritatea fișierelor PDF devin supradimensionate deoarece au fost create "
+"de pe hardware de scanare de înaltă rezoluție, exportate cu preconfigurări "
+"de „calitate de tipărire” din software precum Adobe Illustrator sau conțin "
+"biblioteci de fonturi duplicate."
+
+#: converters/templates/converters/compress_pdf.html:81
+msgid "Are my confidential documents secure?"
+msgstr "Sunt documentele mele confidențiale în siguranță?"
+
+#: converters/templates/converters/compress_pdf.html:82
+msgid ""
+"We treat your privacy seriously. Your files are processed securely through "
+"automated software. Neither the original heavy file nor the compressed "
+"result is ever read by humans. All data is automatically wiped from our "
+"cloud servers exactly one hour after upload."
+msgstr ""
+"Tratăm confidențialitatea ta cu seriozitate. Fișierele tale sunt procesate "
+"în siguranță prin intermediul unui software automatizat. Nici fișierul greu "
+"original, nici rezultatul comprimat nu sunt citite vreodată de oameni. Toate "
+"datele sunt șterse automat de pe serverele noastre cloud exact la o oră după "
+"încărcare."
+
+#: converters/templates/converters/image_pdf.html:5
+msgid ""
+"Convert images and photos (JPG, PNG) into a single PDF file. Fast uploading, "
+"easy page sorting, and instant results."
+msgstr "Transformă imagini și fotografii (JPG, PNG) într-un singur fișier PDF. Încărcare rapidă, sortare simplă a paginilor și rezultat instantaneu."
+
+#: converters/templates/converters/image_pdf.html:13
+msgid "Image to PDF Converter"
+msgstr "Convertor Imagini în PDF"
+
+#: converters/templates/converters/image_pdf.html:14
+msgid ""
+"Turn photos and images into a single PDF document. Simply upload up to 20 "
+"files and click the convert button."
+msgstr ""
+"Transformă fotografiile și imaginile într-un singur document PDF. Pur și "
+"simplu încarcă până la 20 de fișiere și apasă butonul de conversie."
+
+#: converters/templates/converters/image_pdf.html:21
+msgid "Why convert Images to PDF?"
+msgstr "De ce să convertești imagini în PDF?"
+
+#: converters/templates/converters/image_pdf.html:23
+msgid ""
+"Sharing a single photograph is easy, but sending a dozen separate images of "
+"a scanned document, a design portfolio, or monthly receipts is a guaranteed "
+"way to confuse the recipient. Image formats like JPG and PNG do not support "
+"multiple pages, meaning they easily get lost or viewed out of order."
+msgstr ""
+"Partajarea unei singure fotografii este ușoară, dar trimiterea a zeci de "
+"imagini separate ale unui document scanat, ale unui portofoliu de design sau "
+"ale chitanțelor lunare este o modalitate garantată de a deruta destinatarul. "
+"Formatele de imagini precum JPG și PNG nu acceptă mai multe pagini, ceea ce "
+"înseamnă că se pot pierde cu ușurință sau pot fi vizualizate într-o ordine "
+"greșită."
+
+#: converters/templates/converters/image_pdf.html:26
+msgid ""
+"Our Image to PDF converter solves this by binding your separate pictures "
+"into one neat, multi-page document. By converting your photos into a "
+"universally accepted PDF, you ensure that your files are viewed exactly in "
+"the sequence you intended, formatted perfectly for both screen reading and "
+"printing."
+msgstr ""
+"Convertorul nostru de imagini în PDF rezolvă acest lucru combinând imaginile "
+"tale separate într-un singur document îngrijit, multi-pagină. Convertindu-ți "
+"fotografiile într-un PDF acceptat universal, te asiguri că fișierele tale "
+"sunt vizualizate exact în secvența dorită, formatate perfect atât pentru "
+"citirea pe ecran, cât și pentru imprimare."
+
+#: converters/templates/converters/image_pdf.html:31
+#: converters/templates/converters/pdf_to_pngjpg.html:42
+msgid "Common use cases"
+msgstr "Cazuri de utilizare frecvente"
+
+#: converters/templates/converters/image_pdf.html:34
+msgid "Freelancers & Designers"
+msgstr "Freelanceri și designeri"
+
+#: converters/templates/converters/image_pdf.html:35
+msgid ""
+"Combine individual design mockups, digital illustrations, or photography "
+"samples into a single, cohesive PDF portfolio. A multi-page PDF looks much "
+"more professional to clients than a ZIP file full of scattered images."
+msgstr ""
+"Combină machete individuale de design, ilustrații digitale sau eșantioane de "
+"fotografii într-un singur portofoliu PDF coerent. Un PDF multi-pagină arată "
+"mult mai profesional pentru clienți decât un fișier ZIP plin de imagini "
+"împrăștiate."
+
+#: converters/templates/converters/image_pdf.html:38
+msgid "Everyday Admin & Expenses"
+msgstr "Administrare și cheltuieli zilnice"
+
+#: converters/templates/converters/image_pdf.html:39
+msgid ""
+"Took photos of your receipts, medical records, or ID cards with your "
+"smartphone? Merge those JPGs into one single PDF document before uploading "
+"them to your company's HR portal or government websites."
+msgstr ""
+"Ai făcut fotografii chitanțelor, dosarelor medicale sau cărților de "
+"identitate cu smartphone-ul? Unește acele fișiere JPG într-un singur "
+"document PDF înainte de a le încărca pe portalul HR al companiei tale sau pe "
+"site-urile guvernamentale."
+
+#: converters/templates/converters/image_pdf.html:45
+msgid "Flexible and fast compilation"
+msgstr "Compilare flexibilă și rapidă"
+
+#: converters/templates/converters/image_pdf.html:49
+msgid "Drag-and-Drop Reordering:"
+msgstr "Reordonare prin glisare și plasare (Drag-and-Drop):"
+
+#: converters/templates/converters/image_pdf.html:49
+msgid ""
+"Upload your photos and easily drag their thumbnails to arrange them in the "
+"correct order. The first image becomes page one, the second becomes page "
+"two, and so on."
+msgstr ""
+"Încarcă-ți fotografiile și glisează cu ușurință miniaturile acestora pentru "
+"a le aranja în ordinea corectă. Prima imagine devine prima pagină, a doua "
+"devine a doua pagină și așa mai departe."
+
+#: converters/templates/converters/image_pdf.html:53
+msgid "Format Agnostic:"
+msgstr "Indiferent de format:"
+
+#: converters/templates/converters/image_pdf.html:53
+msgid "You don't have to choose just one format. You can upload a mix of both"
+msgstr ""
+"Nu trebuie să alegi doar un singur format. Poți încărca o combinație atât de"
+
+#: converters/templates/converters/image_pdf.html:53
+msgid "graphics and"
+msgstr "grafică, cât și"
+
+#: converters/templates/converters/image_pdf.html:53
+msgid "photographs at the same time and combine them into the same PDF."
+msgstr "fotografii în același timp și le poți combina în același PDF."
+
+#: converters/templates/converters/image_pdf.html:57
+msgid "High-Fidelity Embedding:"
+msgstr "Încorporare de înaltă fidelitate:"
+
+#: converters/templates/converters/image_pdf.html:67
+msgid "Can I mix different image sizes?"
+msgstr "Pot combina imagini de diferite dimensiuni?"
+
+#: converters/templates/converters/image_pdf.html:68
+msgid ""
+"Yes. Our converter automatically centers and scales your images to fit "
+"standard PDF page dimensions while maintaining their original aspect ratio. "
+"Your images won't be stretched or distorted."
+msgstr ""
+"Da. Convertorul nostru centrează și redimensionează automat imaginile tale "
+"pentru a se potrivi cu dimensiunile standard ale paginilor PDF, menținând în "
+"același timp raportul lor de aspect original. Imaginile tale nu vor fi "
+"întinse sau distorsionate."
+
+#: converters/templates/converters/image_pdf.html:72
+msgid "Will this reduce the quality of my images?"
+msgstr "Va reduce acest lucru calitatea imaginilor mele?"
+
+#: converters/templates/converters/image_pdf.html:73
+msgid ""
+"No. Our tool is designed to compile files, not compress them aggressively. "
+"The resulting PDF will retain the high resolution of your original PNG or "
+"JPG uploads, making it perfectly suitable for high-quality printing."
+msgstr ""
+"Nu. Instrumentul nostru este conceput pentru a compila fișiere, nu pentru a "
+"le comprima în mod agresiv. PDF-ul rezultat va păstra rezoluția înaltă a "
+"încărcărilor originale PNG sau JPG, fiind perfect adecvat pentru imprimare "
+"de înaltă calitate."
+
+#: converters/templates/converters/image_pdf.html:77
+msgid "How many images can I put into one PDF?"
+msgstr "Câte fișiere pot combina simultan?"
+
+#: converters/templates/converters/image_pdf.html:78
+msgid ""
+"You can upload and convert up to 20 images per session. Each uploaded image "
+"will automatically be assigned its own individual page in the final PDF "
+"document."
+msgstr ""
+"Poți încărca și converti până la 20 de imagini pe sesiune. Fiecărei imagini "
+"încărcate i se va atribui automat propria pagină individuală în documentul "
+"PDF final."
+
+#: converters/templates/converters/image_pdf.html:82
+msgid "Are my personal photos kept private?"
+msgstr "Sunt fotografiile mele personale păstrate confidențiale?"
+
+#: converters/templates/converters/image_pdf.html:83
+msgid ""
+"Absolutely. We process all uploads automatically on secure servers. Nobody "
+"has manual access to your photos. For your peace of mind, all original "
+"images and the generated PDF are permanently deleted from our servers one "
+"hour after conversion."
+msgstr ""
+"Absolut. Procesăm toate încărcările automat pe servere securizate. Nimeni nu "
+"are acces manual la fotografiile tale. Pentru liniștea ta, toate imaginile "
+"originale și PDF-ul generat sunt șterse permanent de pe serverele noastre la "
+"o oră după conversie."
+
+#: converters/templates/converters/join_pdf.html:5
+
+msgid ""
+"Combine multiple PDF files into a single document. A user-friendly interface "
+"for rearranging pages and quickly merging documents online."
+msgstr ""
+"Unește mai multe fișiere PDF într-un singur document. Interfață comodă pentru reordonarea paginilor și îmbinarea rapidă a documentelor."
+
+#: converters/templates/converters/join_pdf.html:11
+msgid "PDF Merger"
+msgstr "Combinare PDF"
+
+#: converters/templates/converters/join_pdf.html:12
+msgid ""
+"Combine multiple PDF files into a single, organized document. Simply upload "
+"up to 20 files and click the convert button."
+msgstr ""
+"Unește mai multe fișiere PDF într-un singur document organizat. Pur și "
+"simplu încarcă până la 20 de fișiere și apasă butonul de conversie."
+
+#: converters/templates/converters/join_pdf.html:20
+msgid "Why join PDF files together?"
+msgstr "De ce să unești fișiere PDF?"
+
+#: converters/templates/converters/join_pdf.html:22
+msgid ""
+"Sending multiple file attachments in an email looks unprofessional and is "
+"frustrating for the recipient to download, open, and organize. Whether you "
+"are dealing with scanned book chapters, scattered monthly invoices, or "
+"individual project reports, keeping them separate is a logistical headache."
+msgstr ""
+"Trimiterea mai multor atașamente de fișiere într-un e-mail arată "
+"neprofesionist și este frustrant pentru destinatar să le descarce, să le "
+"deschidă și să le organizeze. Indiferent dacă ai de-a face cu capitole de "
+"cărți scanate, facturi lunare împrăștiate sau rapoarte individuale de "
+"proiect, menținerea lor separată reprezintă o bătaie de cap logistică."
+
+#: converters/templates/converters/join_pdf.html:25
+msgid ""
+"Our online PDF Merger allows you to combine multiple PDF documents into a "
+"single, cohesive file. It streamlines your digital workspace, making it "
+"infinitely easier to share, print, or archive your important documents "
+"without losing track of individual pages."
+msgstr ""
+"Instrumentul nostru online de combinare PDF îți permite să unești mai multe "
+"documente PDF într-un singur fișier coerent. Acesta vă simplifică spațiul de "
+"lucru digital, făcând infinit mai ușoară partajarea, tipărirea sau arhivarea "
+"documentelor importante fără a pierde evidența paginilor individuale."
+
+#: converters/templates/converters/join_pdf.html:30
+msgid "Who uses a PDF merger?"
+msgstr "Cine folosește un program de combinare PDF?"
+
+#: converters/templates/converters/join_pdf.html:33
+msgid "Legal & Real Estate Teams"
+msgstr "Echipe juridice și imobiliare"
+
+#: converters/templates/converters/join_pdf.html:34
+msgid ""
+"Compile exhaustive property portfolios, legal briefs, or contract addendums. "
+"Merge separately signed signature pages back into the main master document "
+"before sending it to clients or courts."
+msgstr ""
+"Compilează portofolii exhaustive de proprietăți, briefuri juridice sau acte "
+"adiționale de contract. Unește paginile cu semnături semnate separat înapoi "
+"în documentul principal înainte de a-l trimite clienților sau instanțelor."
+
+#: converters/templates/converters/join_pdf.html:37
+msgid "Accounting & Freelancers"
+msgstr "Contabilitate și freelanceri"
+
+#: converters/templates/converters/join_pdf.html:38
+msgid ""
+"Instead of sending your accountant 15 individual PDF receipts at the end of "
+"the month, merge them into one organized \"Expense Report\" document to "
+"ensure nothing gets lost in transit."
+msgstr ""
+"În loc să trimiți contabilului tău 15 chitanțe PDF individuale la sfârșitul "
+"lunii, unește-le într-un singur document organizat „Raport de cheltuieli” "
+"pentru a te asigura că nimic nu se pierde pe parcurs."
+
+#: converters/templates/converters/join_pdf.html:44
+msgid "Intuitive and lossless merging"
+msgstr "Combinare intuitivă și fără pierderi"
+
+#: converters/templates/converters/join_pdf.html:48
+msgid "Visual Drag-and-Drop:"
+msgstr "Glisare și plasare vizuală (Drag-and-Drop):"
+
+#: converters/templates/converters/join_pdf.html:48
+msgid ""
+"You have full control. Upload your files and simply drag their thumbnail "
+"cards to rearrange them into the exact sequence you need before hitting the "
+"merge button."
+msgstr ""
+"Ai control deplin. Încarcă-ți fișierele și pur și simplu glisează cardurile "
+"lor cu miniaturi pentru a le rearanja în secvența exactă de care ai nevoie "
+"înainte de a apăsa butonul de combinare."
+
+#: converters/templates/converters/join_pdf.html:52
+msgid "Lossless Quality:"
+msgstr "Calitate fără pierderi:"
+
+#: converters/templates/converters/join_pdf.html:52
+#, python-format
+msgid ""
+"Merging files does not alter the content inside them. Your text resolution, "
+"vector graphics, and page dimensions remain 100%% identical to the original "
+"uploads."
+msgstr ""
+"Combinarea fișierelor nu modifică conținutul din interiorul acestora. "
+"Rezoluția textului, grafica vectorială și dimensiunile paginilor rămân 100%% "
+"identice cu fișierele originale încărcate."
+
+#: converters/templates/converters/join_pdf.html:56
+msgid "Cross-Platform:"
+msgstr "Multiplatformă:"
+
+#: converters/templates/converters/join_pdf.html:56
+msgid ""
+"No need to install heavy desktop software like Adobe Acrobat. Merge files "
+"directly from your browser on Windows, Mac, Linux, or mobile devices."
+msgstr ""
+"Fără a fi nevoie să instalezi software desktop greoi, cum ar fi Adobe "
+"Acrobat. Unește fișierele direct din browser pe Windows, Mac, Linux sau "
+"dispozitive mobile."
+
+#: converters/templates/converters/join_pdf.html:66
+msgid "Can I rearrange the order of the files?"
+msgstr "Pot rearanja ordinea fișierelor?"
+
+#: converters/templates/converters/join_pdf.html:67
+msgid ""
+"Yes! Once you upload your PDFs, they will appear as file cards on the "
+"screen. Simply click, hold, and drag the cards left or right to reorder "
+"them. The files will be combined in the exact order shown on your screen."
+msgstr ""
+"Da! Odată ce îți încarci fișierele PDF, acestea vor apărea ca fișe de "
+"fișiere pe ecran. Pur și simplu dă clic, menține apăsat și glisează fișele "
+"la stânga sau la dreapta pentru a le rearanja. Fișierele vor fi combinate în "
+"ordinea exactă afișată pe ecran."
+
+#: converters/templates/converters/join_pdf.html:71
+msgid "How many files can I merge at once?"
+msgstr "Câte fișiere pot combina simultan?"
+
+#: converters/templates/converters/join_pdf.html:72
+msgid ""
+"You can upload and merge up to 20 separate PDF files in a single session. If "
+"you have more than 20 files, you can merge the first batch, download the "
+"result, and then merge that new file with the remaining documents."
+msgstr ""
+"Poți încărca și combina până la 20 de fișiere PDF separate într-o singură "
+"sesiune. Dacă ai mai mult de 20 de fișiere, poți combina primul lot, poți "
+"descărca rezultatul și apoi poți combina acel fișier nou cu documentele "
+"rămase."
+
+#: converters/templates/converters/join_pdf.html:76
+msgid "Will merging PDFs reduce their visual quality?"
+msgstr "Combinarea fișierelor PDF le va reduce calitatea vizuală?"
+
+#: converters/templates/converters/join_pdf.html:77
+msgid ""
+"Not at all. Our tool performs a direct structural merge. We do not re-"
+"encode, compress, or rasterize the pages during this process. The final "
+"document will retain the exact same visual quality and text sharpness as "
+"your original files."
+msgstr ""
+"Nicidecum. Instrumentul nostru efectuează o combinare structurală directă. "
+"Nu recodificăm, nu comprimăm și nu rasterizăm paginile în timpul acestui "
+"proces. Documentul final va păstra exact aceeași calitate vizuală și "
+"claritate a textului ca și fișierele originale."
+
+#: converters/templates/converters/join_pdf.html:81
+msgid "Is it safe to merge confidential documents?"
+msgstr "Este sigur să combini documente confidențiale?"
+
+#: converters/templates/converters/join_pdf.html:82
+msgid ""
+"Absolutely. We employ strict privacy measures. Your files are merged "
+"automatically by our server scripts without any human intervention. Every "
+"uploaded file and the final merged document are permanently purged from our "
+"servers within one hour."
+msgstr ""
+"Absolut. Aplicăm măsuri stricte de confidențialitate. Fișierele tale sunt "
+"combinate automat de scripturile serverului nostru fără nicio intervenție "
+"umană. Fiecare fișier încărcat și documentul final combinat sunt șterse "
+"definitiv de pe serverele noastre în termen de o oră."
+
+#: converters/templates/converters/pdf_ocr.html:5
+msgid ""
+"Free online OCR converter. Recognize and extract text from scanned PDF "
+"documents and images for further editing."
+msgstr "Convertor OCR online gratuit. Recunoaște și extrage textul din documente PDF scanate și imagini pentru editare și copiere ulterioară."
+
+#: converters/templates/converters/pdf_ocr.html:11
+msgid "PDF OCR Tool"
+msgstr "Instrument OCR pentru PDF"
+
+#: converters/templates/converters/pdf_ocr.html:12
+msgid ""
+"Extract editable text from scanned PDF documents or images. Simply upload up "
+"to 20 files and click the convert button."
+msgstr ""
+"Extrage text editabil din documente PDF scanate sau imagini. Pur și simplu "
+"încarcă până la 20 de fișiere și apasă butonul de conversie."
+
+#: converters/templates/converters/pdf_ocr.html:20
+msgid "Why use an OCR PDF tool?"
+msgstr "De ce să folosești un instrument PDF OCR?"
+
+#: converters/templates/converters/pdf_ocr.html:22
+msgid ""
+"Not all PDFs are created equal. When you scan a physical paper document or "
+"take a photo of a page, the resulting PDF is essentially just a flat image. "
+"You cannot select the text, copy a paragraph, or search for specific "
+"keywords. The information is locked."
+msgstr ""
+"Nu toate fișierele PDF sunt la fel. Când scanezi un document fizic pe hârtie "
+"sau faci o fotografie a unei pagini, PDF-ul rezultat este în esență doar o "
+"imagine plată. Nu poți selecta textul, nu poți copia un paragraf și nici nu "
+"poți căuta cuvinte cheie specifice. Informațiile sunt blocate."
+
+#: converters/templates/converters/pdf_ocr.html:25
+msgid ""
+"Our Optical Character Recognition (OCR) engine acts as a digital translator. "
+"It scans the visual layer of your document, identifies individual letters "
+"and words, and extracts them into a readable, editable format. Instead of "
+"manually retyping pages of text, you can digitize your documents in seconds."
+msgstr ""
+"Motorul nostru de recunoaștere optică a caracterelor (OCR) acționează ca un "
+"traducător digital. Acesta scanează stratul vizual al documentului tău, "
+"identifică literele și cuvintele individuale și le extrage într-un format "
+"citibil și editabil. În loc să reintroduci manual pagini întregi de text, "
+"îți poți digitaliza documentele în câteva secunde."
+
+#: converters/templates/converters/pdf_ocr.html:30
+msgid "Who benefits from OCR?"
+msgstr "Cine beneficiază de OCR?"
+
+#: converters/templates/converters/pdf_ocr.html:33
+msgid "University Students & Academics"
+msgstr "Studenți universitari și cadre universitare"
+
+#: converters/templates/converters/pdf_ocr.html:34
+msgid ""
+"Stop wasting time retyping material. Instantly extract text from scanned "
+"library books, printed lab reports, and physical lecture notes to quote them "
+"directly in your own assignments and research papers."
+msgstr ""
+"Nu mai pierde timpul reintroducând materialul. Extrage instantaneu textul "
+"din cărți de bibliotecă scanate, rapoarte de laborator tipărite și notițe "
+"fizice de curs pentru a le cita direct în propriile tale teme și lucrări de "
+"cercetare."
+
+#: converters/templates/converters/pdf_ocr.html:37
+msgid "Accounting & Administration"
+msgstr "Contabilitate și administrație"
+
+#: converters/templates/converters/pdf_ocr.html:38
+msgid ""
+"Digitize printed invoices, paper receipts, and physical contracts. Transform "
+"unsearchable paper archives into accessible digital text that you can easily "
+"copy into spreadsheets, databases, or ERP systems."
+msgstr ""
+"Digitalizează facturi tipărite, chitanțe pe hârtie și contracte fizice. "
+"Transformă arhivele de hârtie în care nu se poate căuta în text digital "
+"accesibil, pe care îl poți copia cu ușurință în foi de calcul, baze de date "
+"sau sisteme ERP."
+
+#: converters/templates/converters/pdf_ocr.html:44
+msgid "Advanced text extraction"
+msgstr "Extragere avansată a textului"
+
+#: converters/templates/converters/pdf_ocr.html:48
+msgid "Multi-Language Recognition:"
+msgstr "Recunoaștere în mai multe limbi:"
+
+#: converters/templates/converters/pdf_ocr.html:48
+msgid ""
+"Our engine doesn't just read English. It accurately identifies characters "
+"across multiple alphabets, making it perfect for international documents and "
+"localized texts."
+msgstr ""
+"Motorul nostru nu citește doar limba engleză. Acesta identifică cu precizie "
+"caracterele din mai multe alfabete, fiind perfect pentru documente "
+"internaționale și texte localizate."
+
+#: converters/templates/converters/pdf_ocr.html:52
+msgid "High Accuracy Algorithm:"
+msgstr "Algoritm de înaltă precizie:"
+
+#: converters/templates/converters/pdf_ocr.html:52
+msgid ""
+"We utilize advanced machine learning patterns to distinguish between similar-"
+"looking characters (like the number \"1\", capital \"I\", and lowercase "
+"\"l\") even in lower-quality scans."
+msgstr ""
+"Utilizăm modele avansate de învățare automată pentru a distinge între "
+"caractere cu aspect similar (cum ar fi cifra „1”, litera mare „I” și litera "
+"mică „l”), chiar și în scanări de calitate inferioară."
+
+#: converters/templates/converters/pdf_ocr.html:56
+msgid "Asynchronous Processing:"
+msgstr "Procesare asincronă:"
+
+#: converters/templates/converters/pdf_ocr.html:56
+msgid ""
+"OCR is a computationally heavy task. Our server handles the intensive "
+"processing in the background, ensuring your browser remains responsive while "
+"the text is being extracted."
+msgstr ""
+"OCR este o sarcină intensivă din punct de vedere computațional. Serverul "
+"nostru se ocupă de procesarea intensivă în fundal, asigurându-se că "
+"browserul tău rămâne receptiv în timp ce textul este extras."
+
+#: converters/templates/converters/pdf_ocr.html:66
+msgid "What does OCR actually stand for?"
+msgstr "Ce înseamnă de fapt OCR?"
+
+#: converters/templates/converters/pdf_ocr.html:67
+msgid ""
+"OCR stands for Optical Character Recognition. It is a technology that "
+"recognizes text within a digital image. It is commonly used to recognize "
+"text in scanned documents and photos, converting a physical paper record "
+"into editable digital data."
+msgstr ""
+"OCR vine de la Optical Character Recognition (Recunoaștere Optică a "
+"Caracterelor). Este o tehnologie care recunoaște textul dintr-o imagine "
+"digitală. Este utilizată în mod obișnuit pentru a recunoaște textul din "
+"documente scanate și fotografii, transformând o înregistrare fizică pe "
+"hârtie în date digitale editabile."
+
+#: converters/templates/converters/pdf_ocr.html:71
+msgid "Can the tool read handwritten notes?"
+msgstr "Poate instrumentul să citească notițe scrise de mână?"
+
+#: converters/templates/converters/pdf_ocr.html:72
+msgid ""
+"Our OCR engine is primarily optimized for printed, typed text (like books, "
+"printed reports, and official documents). While it may recognize "
+"exceptionally clear and block-lettered handwriting, cursive or messy "
+"handwritten notes will generally produce inaccurate results."
+msgstr ""
+"Motorul nostru OCR este optimizat în principal pentru text tipărit și "
+"dactilografiat (cum ar fi cărți, rapoarte tipărite și documente oficiale). "
+"Deși poate recunoaște scrisul de mână excepțional de clar și scris cu "
+"majuscule de tipar, scrisul de mână cursiv sau dezordonat va produce în "
+"general rezultate inexacte."
+
+#: converters/templates/converters/pdf_ocr.html:76
+msgid "What affects the quality of the extracted text?"
+msgstr "Ce afectează calitatea textului extras?"
+
+#: converters/templates/converters/pdf_ocr.html:81
+msgid "Are my scanned documents kept private?"
+msgstr "Sunt documentele mele scanate păstrate confidențiale?"
+
+#: converters/templates/converters/pdf_ocr.html:82
+msgid ""
+"Absolutely. We know scanned documents often contain sensitive personal or "
+"business information. Your files are processed entirely by automated "
+"algorithms without human interaction. All uploads and generated text files "
+"are permanently deleted from our servers one hour after processing."
+msgstr ""
+"Absolut. Știm că documentele scanate conțin adesea informații personale sau "
+"de afaceri sensibile. Fișierele tale sunt procesate în întregime de "
+"algoritmi automatizați, fără interacțiune umană. Toate încărcările și "
+"fișierele text generate sunt șterse definitiv de pe serverele noastre la o "
+"oră după procesare."
+
+#: converters/templates/converters/pdf_to_pngjpg.html:5
+msgid ""
+"Extract PDF pages or convert them into high-quality JPG/PNG images. Process "
+"files online in just a few clicks—no software installation required."
+msgstr "Extrage paginile PDF sau convertește-le în imagini JPG/PNG de înaltă calitate. Procesare online în câteva clicuri, fără instalare."
+
+#: converters/templates/converters/pdf_to_pngjpg.html:23
+msgid "PDF to Image Converter"
+msgstr "Convertor PDF în Imagini"
+
+#: converters/templates/converters/pdf_to_pngjpg.html:24
+msgid ""
+"Convert PDF pages into high-quality individual images. Simply upload up to "
+"20 files and click the convert button."
+msgstr ""
+"Convertește paginile PDF în imagini individuale de înaltă calitate. Pur și "
+"simplu încarcă până la 20 de fișiere și apasă butonul de conversie."
+
+#: converters/templates/converters/pdf_to_pngjpg.html:32
+msgid "Why convert PDF to Image formats?"
+msgstr "De ce să convertești PDF în formate de imagine?"
+
+#: converters/templates/converters/pdf_to_pngjpg.html:34
+msgid ""
+"While PDFs are the global standard for document sharing, they aren't always "
+"universally accepted. If you want to embed a specific page into a PowerPoint "
+"presentation, share a document snippet on social media, or upload ID scans "
+"to a verification portal, you need standard image files."
+msgstr ""
+"Deși fișierele PDF sunt standardul global pentru partajarea documentelor, "
+"ele nu sunt întotdeauna acceptate universal. Dacă vrei să încorporezi o "
+"anumită pagină într-o prezentare PowerPoint, să partajezi un fragment dintr-"
+"un document pe rețelele de socializare sau să încarci scanări ale actului de "
+"identitate pe un portal de verificare, ai nevoie de fișiere imagine standard."
+
+#: converters/templates/converters/pdf_to_pngjpg.html:37
+msgid ""
+"Our PDF to Image converter safely rasterizes your documents. It takes each "
+"individual page of your PDF and renders it into a high-quality, standalone "
+"picture. Whether you need a lossless"
+msgstr ""
+"Convertorul nostru de PDF în imagini rasterizează în siguranță documentele "
+"tale. Acesta preia fiecare pagină individuală a PDF-ului tău și o randează "
+"într-o imagine independentă de înaltă calitate. Indiferent dacă ai nevoie de "
+"un format fără pierderi"
+
+#: converters/templates/converters/pdf_to_pngjpg.html:37
+msgid "for sharp text or a compressed"
+msgstr "pentru un text clar sau de unul comprimat"
+
+#: converters/templates/converters/pdf_to_pngjpg.html:37
+msgid "for smaller file sizes, you get pixel-perfect results instantly."
+msgstr ""
+"pentru dimensiuni mai mici ale fișierului, obții instantaneu rezultate "
+"perfecte la nivel de pixel."
+
+#: converters/templates/converters/pdf_to_pngjpg.html:45
+msgid "Web Forms & KYC Verification"
+msgstr "Formulare web și verificare KYC"
+
+#: converters/templates/converters/pdf_to_pngjpg.html:46
+msgid ""
+"Many government portals, banks, and visa applications do not accept PDF "
+"uploads for security reasons. Easily convert your passport scans or utility "
+"bills into compliant JPG images."
+msgstr ""
+"Multe portaluri guvernamentale, bănci și cereri de viză nu acceptă încărcări "
+"PDF din motive de securitate. Convertește cu ușurință scanările pașaportului "
+"tău sau facturile de utilități în imagini JPG conforme."
+
+#: converters/templates/converters/pdf_to_pngjpg.html:49
+msgid "Social Media & Design"
+msgstr "Rețele sociale și design"
+
+#: converters/templates/converters/pdf_to_pngjpg.html:50
+msgid ""
+"You cannot directly post a PDF to Instagram, Facebook, or Pinterest. Convert "
+"your digital flyers, infographics, or portfolio pages into high-resolution "
+"PNGs ready for publishing."
+msgstr ""
+"Nu poți posta direct un PDF pe Instagram, Facebook sau Pinterest. "
+"Convertește flierele digitale, infografiile sau paginile de portofoliu în "
+"fișiere PNG de înaltă rezoluție, gata de publicare."
+
+#: converters/templates/converters/pdf_to_pngjpg.html:56
+msgid "High-fidelity rendering"
+msgstr "Randare de înaltă fidelitate"
+
+#: converters/templates/converters/pdf_to_pngjpg.html:60
+msgid "4x Resolution Quality:"
+msgstr "Calitate de rezoluție 4x:"
+
+#: converters/templates/converters/pdf_to_pngjpg.html:60
+msgid ""
+"We don't output blurry thumbnails. Our engine renders pages at high DPI "
+"(dots per inch), ensuring that small text, complex blueprints, and detailed "
+"graphs remain crystal clear."
+msgstr ""
+"Noi nu generăm miniaturi neclare. Motorul nostru randează paginile la un DPI "
+"(puncte pe inch) ridicat, asigurându-se că textul mic, planurile complexe și "
+"graficele detaliate rămân extrem de clare."
+
+#: converters/templates/converters/pdf_to_pngjpg.html:64
+msgid "Smart ZIP Export:"
+msgstr "Export ZIP inteligent:"
+
+#: converters/templates/converters/pdf_to_pngjpg.html:64
+msgid ""
+"Converting a 50-page PDF? Your browser won't be flooded with 50 separate "
+"downloads. All your newly generated images are neatly packed into a single "
+"ZIP archive."
+msgstr ""
+"Convertești un PDF de 50 de pagini? Browserul tău nu va fi inundat cu 50 de "
+"descărcări separate. Toate imaginile nou generate sunt împachetate frumos "
+"într-o singură arhivă ZIP."
+
+#: converters/templates/converters/pdf_to_pngjpg.html:68
+msgid "Format Flexibility:"
+msgstr "Flexibilitate a formatului:"
+
+#: converters/templates/converters/pdf_to_pngjpg.html:68
+msgid ""
+"Choose PNG to prevent text pixelation (lossless), or choose JPG to keep your "
+"overall file size as small as possible (lossy)."
+msgstr ""
+"Alege PNG pentru a preveni pixelarea textului (fără pierderi) sau alege JPG "
+"pentru a menține dimensiunea generală a fișierului cât mai mică posibil (cu "
+"pierderi)."
+
+#: converters/templates/converters/pdf_to_pngjpg.html:78
+msgid "Should I choose PNG or JPG?"
+msgstr "Ar trebui să aleg PNG sau JPG?"
+
+#: converters/templates/converters/pdf_to_pngjpg.html:79
+msgid "Choose "
+msgstr "Alege "
+
+#: converters/templates/converters/pdf_to_pngjpg.html:79
+msgid ""
+"if your PDF contains a lot of text, flat graphics, charts, or logos. PNG "
+"uses lossless compression, meaning the edges of letters will remain "
+"incredibly sharp. Choose "
+msgstr ""
+"dacă PDF-ul tău conține mult text, grafică plată, diagrame sau logo-uri. PNG "
+"folosește o compresie fără pierderi, ceea ce înseamnă că marginile literelor "
+"vor rămâne incredibil de clare. Alege "
+
+#: converters/templates/converters/pdf_to_pngjpg.html:79
+msgid ""
+"if your PDF is mostly photographs or large scanned images, as it will "
+"significantly reduce the file size."
+msgstr ""
+"dacă PDF-ul tău conține în mare parte fotografii sau imagini mari scanate, "
+"deoarece va reduce semnificativ dimensiunea fișierului."
+
+#: converters/templates/converters/pdf_to_pngjpg.html:83
+msgid "How do you handle multi-page PDFs?"
+msgstr "Cum gestionați fișierele PDF cu mai multe pagini?"
+
+#: converters/templates/converters/pdf_to_pngjpg.html:84
+msgid ""
+"Every page of your PDF becomes a separate image file. For example, if you "
+"upload a 5-page PDF, our server will generate 5 images. They are then "
+"automatically bundled into one ZIP file, which you can extract on your "
+"computer or smartphone."
+msgstr ""
+"Fiecare pagină a PDF-ului tău devine un fișier imagine separat. De exemplu, "
+"dacă încarci un PDF de 5 pagini, serverul nostru va genera 5 imagini. "
+"Acestea sunt apoi grupate automat într-un singur fișier ZIP, pe care îl poți "
+"dezarhiva pe computer sau pe smartphone."
+
+#: converters/templates/converters/pdf_to_pngjpg.html:88
+msgid "Will the images be too large to send via email?"
+msgstr "Vor fi imaginile prea mari pentru a fi trimise prin e-mail?"
+
+#: converters/templates/converters/pdf_to_pngjpg.html:89
+msgid ""
+"If you are worried about file limits when emailing attachments, we recommend "
+"selecting the JPG format. JPGs provide an excellent balance between visual "
+"quality and a compact footprint."
+msgstr ""
+"Dacă îți faci griji cu privire la limitele de dimensiune a fișierelor atunci "
+"când trimiți atașamente prin e-mail, îți recomandăm să selectezi formatul "
+"JPG. Fișierele JPG oferă un echilibru excelent între calitatea vizuală și o "
+"amprentă compactă."
+
+#: converters/templates/converters/pdf_to_pngjpg.html:94
+msgid ""
+"Yes. We prioritize your privacy. Uploaded PDFs and the resulting image files "
+"are processed strictly by automated scripts. After 1 hour, all files "
+"associated with your session are permanently deleted from our servers. We do "
+"not retain, share, or analyze your data."
+msgstr ""
+"Da. Acordăm prioritate confidențialității tale. Fișierele PDF încărcate și "
+"fișierele imagine rezultate sunt procesate strict prin scripturi "
+"automatizate. După 1 oră, toate fișierele asociate sesiunii tale sunt șterse "
+"permanent de pe serverele noastre. Nu reținem, nu partajăm și nu analizăm "
+"datele tale."
+
+#: converters/templates/converters/pdf_to_word.html:8
+msgid ""
+"Convert PDF to editable Word (DOCX) without losing formatting. Accurate text "
+"and table recognition. Fast, free, and secure."
+msgstr "Convertește PDF în Word (DOCX) editabil fără a pierde formatarea. Recunoaștere precisă a textului. Rapid, gratuit și sigur."
+
+#: converters/templates/converters/pdf_to_word.html:12
+msgid "PDF to Word Converter"
+msgstr "Convertor PDF în Word"
+
+#: converters/templates/converters/pdf_to_word.html:13
+msgid ""
+"Convert PDF files to editable Word documents. Simply upload up to 20 files "
+"and click the convert button."
+msgstr ""
+"Convertește fișiere PDF în documente Word editabile. Pur și simplu încarcă "
+"până la 20 de fișiere și apasă butonul de conversie."
+
+#: converters/templates/converters/pdf_to_word.html:21
+msgid "Why convert PDF to Word?"
+msgstr "De ce să convertești PDF în Word?"
+
+#: converters/templates/converters/pdf_to_word.html:23
+msgid ""
+"PDFs are perfect for sharing and printing because they lock your formatting "
+"in place. But what happens when you need to fix a typo in a contract, update "
+"a CV, or extract data from a 50-page university report? Retyping everything "
+"manually is a waste of time."
+msgstr ""
+"Fișierele PDF sunt perfecte pentru partajare și tipărire, deoarece își "
+"blochează formatarea pe loc. Dar ce se întâmplă atunci când trebuie să "
+"corectezi o greșeală dactilografiată într-un contract, să actualizezi un CV "
+"sau să extragi date dintr-un raport universitar de 50 de pagini? "
+"Reintroducerea manuală a tot ceea ce este scris este o pierdere de timp."
+
+#: converters/templates/converters/pdf_to_word.html:26
+msgid ""
+"Our PDF to Word converter acts as a bridge. It reverse-engineers the PDF "
+"document, identifying text blocks, tables, and images, and reconstructs them "
+"into a fully editable Microsoft Word"
+msgstr ""
+"Convertorul nostru de PDF în Word acționează ca o punte. Acesta supune "
+"documentul PDF unui proces de inginerie inversă, identificând blocuri de "
+"text, tabele și imagini, și le reconstruiește într-un fișier Microsoft Word "
+"complet editabil"
+
+#: converters/templates/converters/pdf_to_word.html:26
+msgid ""
+"file. You get your document back, ready for editing, without losing the "
+"original layout."
+msgstr ""
+". Primești înapoi documentul gata de editare, fără a pierde aspectul "
+"original."
+
+#: converters/templates/converters/pdf_to_word.html:31
+msgid "Who uses this tool?"
+msgstr "Cine folosește acest instrument?"
+
+#: converters/templates/converters/pdf_to_word.html:34
+msgid "Students & Researchers"
+msgstr "Studenți și cercetători"
+
+#: converters/templates/converters/pdf_to_word.html:35
+msgid ""
+"Easily extract text from scanned lecture notes, textbook chapters, or "
+"research papers to include in your own thesis or assignments without manual "
+"copying."
+msgstr ""
+"Extrage cu ușurință text din notițe de curs scanate, capitole de manuale sau "
+"lucrări de cercetare pentru a le include în propria teză sau în temele tale, "
+"fără a fi nevoie de copiere manuală."
+
+#: converters/templates/converters/pdf_to_word.html:38
+msgid "Office & Legal Professionals"
+msgstr "Profesioniști din birouri și din domeniul juridic"
+
+#: converters/templates/converters/pdf_to_word.html:39
+msgid ""
+"Turn locked non-disclosure agreements (NDAs), invoices, and corporate "
+"reports back into editable drafts. Revise terms or correct figures instantly."
+msgstr ""
+"Transformă acordurile de confidențialitate (NDA) blocate, facturile și "
+"rapoartele corporative în ciorne editabile. Revizuiește termenii sau "
+"corectează cifrele instantaneu."
+
+#: converters/templates/converters/pdf_to_word.html:45
+msgid "Built for speed and accuracy"
+msgstr "Construit pentru viteză și precizie"
+
+#: converters/templates/converters/pdf_to_word.html:49
+msgid "Smart Layout Retention:"
+msgstr "Păstrare inteligentă a aspectului:"
+
+#: converters/templates/converters/pdf_to_word.html:49
+msgid ""
+"We don't just dump text into a file. Our engine respects paragraph breaks, "
+"font styles, and table structures so you don't spend hours fixing formatting."
+msgstr ""
+"Nu ne limităm doar la a introduce text într-un fișier. Motorul nostru "
+"respectă pauzele de paragraf, stilurile de font și structurile tabelelor, "
+"astfel încât să nu pierzi ore întregi corectând formatarea."
+
+#: converters/templates/converters/pdf_to_word.html:53
+msgid "Scanned Document Support (OCR):"
+msgstr "Suport pentru documente scanate (OCR):"
+
+#: converters/templates/converters/pdf_to_word.html:57
+msgid "Background Batch Processing:"
+msgstr "Procesare în lot în fundal:"
+
+#: converters/templates/converters/pdf_to_word.html:57
+msgid ""
+"Converting 20 files at once? Your browser won't freeze. Our asynchronous "
+"servers handle heavy lifting in the background—just wait for the ZIP "
+"download button to appear."
+msgstr ""
+"Convertești 20 de fișiere simultan? Browserul tău nu se va bloca. Serverele "
+"noastre asincrone se ocupă de sarcinile grele în fundal — trebuie doar să "
+"aștepți să apară butonul de descărcare ZIP."
+
+#: converters/templates/converters/pdf_to_word.html:67
+msgid "Is my sensitive data safe on your servers?"
+msgstr "Sunt datele mele sensibile în siguranță pe serverele voastre?"
+
+#: converters/templates/converters/pdf_to_word.html:68
+msgid ""
+"Absolutely. We process files automatically. No human eyes ever see your "
+"documents. Once the conversion is complete, the original PDF and the "
+"generated Word file are permanently wiped from our database after 1 hour. "
+"Your files are never stored beyond the 1-hour window."
+msgstr ""
+"Absolut. Procesăm fișierele în mod automat. Niciun ochi uman nu vede "
+"vreodată documentele tale. Odată ce conversia este finalizată, PDF-ul "
+"original și fișierul Word generat sunt șterse permanent din baza noastră de "
+"date după 1 oră. Fișierele tale nu sunt niciodată stocate dincolo de "
+"fereastra de 1 oră."
+
+#: converters/templates/converters/pdf_to_word.html:72
+msgid "Will my tables and images stay in place?"
+msgstr "Vor rămâne tabelele și imaginile la locul lor?"
+
+#: converters/templates/converters/pdf_to_word.html:73
+#, python-format
+msgid ""
+"In 95%% of cases, yes. Standard tables, headers, and images are converted "
+"perfectly. However, highly complex graphical PDFs (like magazines with "
+"overlapping layers) might require minor manual adjustments in Word after "
+"conversion."
+msgstr ""
+"În 95%% din cazuri, da. Tabelele standard, anteturile și imaginile sunt "
+"convertite perfect. Cu toate acestea, fișierele PDF grafice extrem de "
+"complexe (cum ar fi revistele cu straturi suprapuse) pot necesita mici "
+"ajustări manuale în Word după conversie."
+
+#: converters/templates/converters/pdf_to_word.html:77
+msgid "Why is this completely free? Are there hidden limits?"
+msgstr "De ce este complet gratuit? Există limite ascunse?"
+
+#: converters/templates/converters/pdf_to_word.html:78
+msgid ""
+"We believe basic document utility should be accessible. Currently, you can "
+"process up to 20 files per session without creating an account."
+msgstr ""
+"Credem că utilitatea de bază a documentelor ar trebui să fie accesibilă. În "
+"prezent, poți procesa până la 20 de fișiere pe sesiune fără a crea un cont."
+
+#: converters/templates/converters/pdf_to_word.html:82
+msgid "Can I use this on a Mac or mobile phone?"
+msgstr "Pot folosi acest lucru pe un Mac sau pe un telefon mobil?"
+
+#: converters/templates/converters/pdf_to_word.html:83
+msgid ""
+"Yes, the tool is entirely browser-based. Whether you are using Windows, "
+"macOS, Linux, iOS, or Android, as long as you have an internet connection, "
+"you can convert your files."
+msgstr ""
+"Da, instrumentul se bazează în întregime pe browser. Indiferent dacă "
+"folosești Windows, macOS, Linux, iOS sau Android, atât timp cât ai o "
+"conexiune la internet, îți poți converti fișierele."
+
+#: converters/templates/converters/word_to_pdf.html:5
+msgid ""
+"Save Word documents (DOC/DOCX) in PDF format. We guarantee the accurate "
+"preservation of your document"
+msgstr "Salvează documentele Word (DOC/DOCX) în format PDF. Garantăm păstrarea exactă a fonturilor, marginilor și aspectului original al documentului."
+
+#: converters/templates/converters/word_to_pdf.html:10
+msgid "Word to PDF Converter"
+msgstr "Convertor Word în PDF"
+
+#: converters/templates/converters/word_to_pdf.html:11
+msgid ""
+"Convert Word documents into secure, universally compatible PDF files. Simply "
+"upload up to 20 files and click the convert button."
+msgstr ""
+"Convertește documente Word în fișiere PDF sigure și compatibile universal. "
+"Pur și simplu încarcă până la 20 de fișiere și apasă butonul de conversie."
+
+#: converters/templates/converters/word_to_pdf.html:19
+msgid "Why convert Word documents to PDF?"
+msgstr "De ce să convertești documentele Word în PDF?"
+
+#: converters/templates/converters/word_to_pdf.html:21
+msgid ""
+"Microsoft Word is fantastic for drafting and editing, but it can be "
+"unreliable for sharing. A "
+msgstr ""
+"Microsoft Word este fantastic pentru redactare și editare, dar poate fi "
+"nesigur pentru partajare. Un fișier"
+
+#: converters/templates/converters/word_to_pdf.html:21
+msgid ""
+"file that looks perfectly formatted on your screen might suffer from broken "
+"margins, replaced fonts, or misaligned tables when opened on a colleague's "
+"Mac, a mobile phone, or in different software like Google Docs."
+msgstr ""
+" care arată perfect formatat pe ecranul tău poate suferi din cauza "
+"marginilor decalate, a fonturilor înlocuite sau a tabelelor aliniate greșit "
+"atunci când este deschis pe Mac-ul unui coleg, pe un telefon mobil sau într-"
+"un software diferit, cum ar fi Google Docs."
+
+#: converters/templates/converters/word_to_pdf.html:24
+msgid ""
+"Converting your Word document to PDF \"locks\" the layout in place. Our "
+"online Word to PDF converter ensures that your carefully crafted resumes, "
+"legal contracts, and academic assignments look exactly as you intended, "
+"preserving a professional appearance across any device or operating system."
+msgstr ""
+"Conversia documentului tău Word în PDF „blochează” aspectul în pagină. "
+"Convertorul nostru online din Word în PDF se asigură că CV-urile, "
+"contractele juridice și temele academice realizate cu atenție arată exact "
+"cum ai intenționat, păstrând o înfățișare profesională pe orice dispozitiv "
+"sau sistem de operare."
+
+#: converters/templates/converters/word_to_pdf.html:29
+msgid "Who needs this tool?"
+msgstr "Cine are nevoie de acest instrument?"
+
+#: converters/templates/converters/word_to_pdf.html:32
+msgid "Job Seekers & Freelancers"
+msgstr "Persoane în căutarea unui loc de muncă și freelanceri"
+
+#: converters/templates/converters/word_to_pdf.html:33
+msgid ""
+"Never send a CV or an invoice in Word format. Recruiters and clients might "
+"open your file on mobile devices where Word formatting breaks. A PDF "
+"guarantees your document looks professional and prevents accidental edits."
+msgstr ""
+"Nu trimite niciodată un CV sau o factură în format Word. Recruiterii și "
+"clienții îți pot deschide fișierul pe dispozitive mobile unde formatarea "
+"Word se deteriorează. Un PDF garantează că documentul tău arată profesional "
+"și previne editările accidentale."
+
+#: converters/templates/converters/word_to_pdf.html:36
+msgid "Students & Educators"
+msgstr "Studenți și cadre didactice"
+
+#: converters/templates/converters/word_to_pdf.html:37
+msgid ""
+"Submit essays, research papers, and thesis drafts with confidence. Avoid "
+"grading penalties caused by pagination errors or missing charts when your "
+"professor uses a different version of Office."
+msgstr ""
+"Trimite eseuri, lucrări de cercetare și ciorne de teze cu încredere. Evită "
+"penalizările la notare cauzate de erori de paginare sau de diagrame lipsă "
+"atunci când profesorul tău folosește o versiune diferită de Office."
+
+#: converters/templates/converters/word_to_pdf.html:43
+msgid "Flawless document rendering"
+msgstr "Randare impecabilă a documentelor"
+
+#: converters/templates/converters/word_to_pdf.html:47
+msgid "Strict Layout Preservation:"
+msgstr "Păstrare strictă a aspectului:"
+
+#: converters/templates/converters/word_to_pdf.html:47
+msgid ""
+"Our conversion engine accurately translates exact line spacing, margins, "
+"complex tables, and embedded graphics into the final PDF without shifting "
+"content."
+msgstr ""
+"Motorul nostru de conversie traduce cu precizie spațierea exactă a liniilor, "
+"marginile, tabelele complexe și grafica încorporată în PDF-ul final, fără a "
+"deplasa conținutul."
+
+#: converters/templates/converters/word_to_pdf.html:51
+msgid "Universal Compatibility:"
+msgstr "Compatibilitate universală:"
+
+#: converters/templates/converters/word_to_pdf.html:51
+msgid "Whether you are uploading a modern"
+msgstr "Fie că încarci un fișier modern"
+
+#: converters/templates/converters/word_to_pdf.html:51
+msgid "file or an older legacy"
+msgstr " sau un document mai vechi de tip"
+
+#: converters/templates/converters/word_to_pdf.html:51
+msgid "document, our tool processes both seamlessly."
+msgstr " moștenit, instrumentul nostru le procesează pe ambele fără probleme."
+
+#: converters/templates/converters/word_to_pdf.html:55
+msgid "No Watermarks:"
+msgstr "Fără filigrane:"
+
+#: converters/templates/converters/word_to_pdf.html:55
+msgid ""
+"We believe in providing a clean, professional output. Your final PDF will be "
+"completely free of intrusive watermarks or forced branding."
+msgstr ""
+"Credem în oferirea unui rezultat curat și profesional. PDF-ul tău final va "
+"fi complet lipsit de filigrane intrusive sau branding forțat."
+
+#: converters/templates/converters/word_to_pdf.html:65
+msgid "Why use an online tool instead of \"Save as PDF\" in Word?"
+msgstr ""
+"De ce să folosești un instrument online în loc de „Salvează ca PDF” în Word?"
+
+#: converters/templates/converters/word_to_pdf.html:66
+msgid ""
+"While desktop Word has a built-in export feature, you might be working on a "
+"mobile device, using a borrowed computer, or simply don't have a paid "
+"Microsoft Office license installed. Our browser-based tool provides a fast, "
+"free alternative without requiring any heavy software."
+msgstr ""
+"Deși aplicația Word pentru desktop are o funcție de export încorporată, este "
+"posibil să lucrezi pe un dispozitiv mobil, să folosești un computer "
+"împrumutat sau pur și simplu să nu ai instalată o licență Microsoft Office "
+"plătită. Instrumentul nostru bazat pe browser oferă o alternativă rapidă și "
+"gratuită, fără a necesita vreun software greoi."
+
+#: converters/templates/converters/word_to_pdf.html:70
+msgid "Will my custom fonts display correctly?"
+msgstr "Se vor afișa corect fonturile mele personalizate?"
+
+#: converters/templates/converters/word_to_pdf.html:71
+msgid ""
+"Yes. Our rendering engine automatically embeds standard formatting directly "
+"into the PDF. This ensures the text remains identical, even if the person "
+"opening the PDF doesn't have those specific fonts installed on their machine."
+msgstr ""
+"Da. Motorul nostru de randare încorporează automat formatarea standard "
+"direct în PDF. Acest lucru asigură că textul rămâne identic, chiar și atunci "
+"când persoana care deschide PDF-ul nu are acele fonturi specifice instalate "
+"pe propriul dispozitiv."
+
+#: converters/templates/converters/word_to_pdf.html:75
+msgid "Can I convert multiple Word documents at once?"
+msgstr "Pot converti mai multe documente Word simultan?"
+
+#: converters/templates/converters/word_to_pdf.html:76
+msgid ""
+"Absolutely. You can drag and drop multiple Word files into the upload zone. "
+"Our server processes them asynchronously, and you can download all the "
+"resulting PDFs together in a single ZIP archive, saving you time."
+msgstr ""
+"Absolut. Poți glisa și plasa mai multe fișiere Word în zona de încărcare. "
+"Serverul nostru le procesează în mod asincron și poți descărca toate "
+"fișierele PDF rezultate împreună într-o singură arhivă ZIP, economisind timp."
+
+#: converters/templates/converters/word_to_pdf.html:80
+msgid "Is my private information protected?"
+msgstr "Sunt informațiile mele private protejate?"
+
+#: converters/templates/converters/word_to_pdf.html:81
+msgid ""
+"Security is our priority. Your documents are uploaded via a secure "
+"connection and processed entirely by automated scripts. No human ever "
+"accesses your files. Both the original Word document and the generated PDF "
+"are permanently and automatically deleted from our servers after one hour."
+msgstr ""
+"Securitatea este prioritatea noastră. Documentele tale sunt încărcate printr-"
+"o conexiune securizată și procesate în întregime prin scripturi "
+"automatizate. Niciun om nu accesează vreodată fișierele tale. Atât "
+"documentul Word original, cât și PDF-ul generat sunt șterse permanent și "
+"automat de pe serverele noastre după o oră."

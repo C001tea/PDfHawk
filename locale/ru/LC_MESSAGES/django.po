@@ -1,0 +1,1422 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-15 16:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: Filetools/settings.py:132
+msgid "English"
+msgstr ""
+
+#: Filetools/settings.py:133
+msgid "Russian"
+msgstr ""
+
+#: Filetools/settings.py:134
+msgid "Romanian"
+msgstr ""
+
+#: converters/templates/base.html:149
+msgid "DOCUMENT PROCESSING SERVICE"
+msgstr "СЕРВИС ОБРАБОТКИ ДОКУМЕНТОВ"
+
+#: converters/templates/base.html:166
+msgid "NO REGISTRATION REQUIRED"
+msgstr "БЕЗ РЕГИСТРАЦИИ"
+
+#: converters/templates/base.html:166
+msgid "FILES REMOVED AFTER 1 HOUR"
+msgstr "ФАЙЛЫ УДАЛЯЮТСЯ ЧЕРЕЗ ЧАС"
+
+#: converters/templates/base.html:174
+msgid "Compress"
+msgstr "Сжатие"
+
+#: converters/templates/base.html:175
+msgid "OCR"
+msgstr "Распознавание (OCR)"
+
+#: converters/templates/base.html:177
+msgid "Join PDF"
+msgstr "Объединить PDF"
+
+#: converters/templates/base.html:187
+msgid "Drop files here"
+msgstr "Перетащите файлы сюда"
+
+#: converters/templates/base.html:188
+msgid "or"
+msgstr "или"
+
+#: converters/templates/base.html:192
+msgid "Choose file"
+msgstr "Выберите файлы"
+
+#: converters/templates/base.html:198
+msgid "Clear all"
+msgstr "Очистить все"
+
+#: converters/templates/base.html:211
+msgid "Convert"
+msgstr "Конвертировать"
+
+#: converters/templates/base.html:216
+msgid "Download all"
+msgstr "Скачать все"
+
+#: converters/templates/base.html:222
+msgid "Converting files..."
+msgstr "Файлы конвертируются"
+
+#: converters/templates/base.html:501
+msgid "Free online document converter"
+msgstr "Бесплатный онлайн-конвертер документов"
+
+#: converters/templates/base.html:506
+msgid "Privacy Policy"
+msgstr "Политика конфиденциальности"
+
+#: converters/templates/base.html:507
+msgid "Terms of Service"
+msgstr "Условия использования"
+
+#: converters/templates/converters/compress_pdf.html:5
+msgid ""
+"Reduce PDF file sizes without losing quality. Ideal for quickly emailing "
+"documents or uploading them to websites in seconds."
+msgstr "Уменьшайте размер PDF-файлов без потери качества. Идеально для быстрой отправки документов по email или загрузки на сайты за считанные секунды."
+
+#: converters/templates/converters/compress_pdf.html:11
+msgid "PDF Compressor"
+msgstr "Компрессор PDF"
+
+#: converters/templates/converters/compress_pdf.html:12
+msgid ""
+"Reduce the size of your PDF files for easier sharing and sending. Simply "
+"upload up to 20 files and click the convert button."
+msgstr ""
+"Уменьшите размер PDF-файлов для удобства их отправки и обмена. Просто "
+"загрузите до 20 файлов и нажмите кнопку конвертации."
+
+#: converters/templates/converters/compress_pdf.html:20
+msgid "Why compress PDF files?"
+msgstr "Зачем сжимать PDF-файлы?"
+
+#: converters/templates/converters/compress_pdf.html:22
+msgid ""
+"Have you ever tried to email a crucial document or upload your CV to a job "
+"portal, only to be blocked by a \"File size too large\" error? PDFs can "
+"easily bloat to massive sizes, especially when they contain high-resolution "
+"scanned images, vector graphics, or embedded fonts."
+msgstr ""
+"Вы когда-нибудь пытались отправить важный документ по электронной почте или "
+"загрузить резюме на портал вакансий, но сталкивались с ошибкой \"Файл "
+"слишком большой\"? PDF-файлы могут значительно увеличиваться в размере, "
+"особенно если они содержат изображения высокого разрешения, векторную "
+"графику или встроенные шрифты."
+
+#: converters/templates/converters/compress_pdf.html:25
+msgid ""
+"Our online PDF Compressor solves this by intelligently shrinking your "
+"documents. By analyzing the internal structure of your file, it safely "
+"removes redundant data and optimizes images, significantly reducing the file "
+"size while keeping your text sharp and your graphics perfectly readable."
+msgstr ""
+"Наш онлайн-компрессор PDF решает эту проблему, интеллектуально уменьшая "
+"размер ваших документов. Анализируя внутреннюю структуру файла, он безопасно "
+"удаляет избыточные данные и оптимизирует изображения, существенно снижая "
+"размер файла при сохранении четкости текста и безупречной читаемости графики."
+
+#: converters/templates/converters/compress_pdf.html:30
+msgid "Who needs a PDF compressor?"
+msgstr "Кому нужен компрессор PDF?"
+
+#: converters/templates/converters/compress_pdf.html:33
+msgid "Job Seekers & Creatives"
+msgstr "Соискатели и творческие специалисты"
+
+#: converters/templates/converters/compress_pdf.html:34
+msgid ""
+"Design portfolios and visual resumes are notoriously heavy. Compress your "
+"application documents to meet the strict 2MB or 5MB limits required by "
+"corporate HR systems and freelance platforms."
+msgstr ""
+"Дизайнерские портфолио и визуальные резюме обычно имеют большой вес. "
+"Сжимайте документы заявок, чтобы соответствовать строгим лимитам в 2 МБ или "
+"5 МБ, требуемым корпоративными HR-системами и платформами для фрилансеров."
+
+#: converters/templates/converters/compress_pdf.html:37
+msgid "Lawyers & Office Workers"
+msgstr "Юристы и офисные сотрудники"
+
+#: converters/templates/converters/compress_pdf.html:38
+msgid ""
+"Email providers like Gmail or Outlook restrict attachments to 20-25MB. "
+"Seamlessly shrink massive court bundles, scanned contracts, and annual "
+"reports to ensure they reach your clients' inboxes."
+msgstr ""
+"Почтовые сервисы, такие как Gmail или Outlook, ограничивают вложения до 20–"
+"25 МБ. Легко уменьшайте размер объемных судебных пакетов, сканированных "
+"договоров и годовых отчетов, чтобы они гарантированно доходили до почтовых "
+"ящиков ваших клиентов."
+
+#: converters/templates/converters/compress_pdf.html:44
+msgid "Smart optimization algorithms"
+msgstr "Умные алгоритмы оптимизации"
+
+#: converters/templates/converters/compress_pdf.html:48
+msgid "Intelligent Image Downsampling:"
+msgstr "Интеллектуальное уменьшение разрешения изображений:"
+
+#: converters/templates/converters/compress_pdf.html:48
+msgid ""
+"We scale down unnecessarily large background images and photographs to an "
+"optimal web resolution (DPI) without creating visible pixelation."
+msgstr ""
+"Мы уменьшаем излишне крупные фоновые изображения и фотографии до "
+"оптимального веб-разрешения (DPI) без появления заметной пикселизации."
+
+#: converters/templates/converters/compress_pdf.html:52
+msgid "Font & Metadata Cleanup:"
+msgstr "Очистка шрифтов и метаданных:"
+
+#: converters/templates/converters/compress_pdf.html:52
+msgid ""
+"The compressor automatically strips out hidden junk data, unused structural "
+"tags, and embedded fonts that aren't actually required to display your "
+"document."
+msgstr ""
+"Компрессор автоматически удаляет скрытые ненужные данные, неиспользуемые "
+"структурные теги и встроенные шрифты, которые фактически не требуются для "
+"отображения вашего документа."
+
+#: converters/templates/converters/compress_pdf.html:56
+msgid "Browser-Friendly Results:"
+msgstr "Результаты, оптимизированные для браузеров:"
+
+#: converters/templates/converters/compress_pdf.html:56
+msgid ""
+"Compressed PDFs load significantly faster on mobile devices and directly "
+"within web browsers, improving the experience for whoever reads your file."
+msgstr ""
+"Сжатые PDF-файлы загружаются значительно быстрее на мобильных устройствах и "
+"прямо в веб-браузерах, улучшая опыт любого пользователя, читающего ваш файл."
+
+#: converters/templates/converters/compress_pdf.html:62
+#: converters/templates/converters/image_pdf.html:63
+#: converters/templates/converters/join_pdf.html:62
+#: converters/templates/converters/pdf_ocr.html:62
+#: converters/templates/converters/pdf_to_pngjpg.html:74
+#: converters/templates/converters/pdf_to_word.html:63
+#: converters/templates/converters/word_to_pdf.html:61
+msgid "Frequently Asked Questions"
+msgstr "Часто задаваемые вопросы"
+
+#: converters/templates/converters/compress_pdf.html:66
+msgid "Will my PDF look blurry after compression?"
+msgstr "Будет ли мой PDF выглядеть размытым после сжатия?"
+
+#: converters/templates/converters/compress_pdf.html:67
+msgid ""
+"No. The text in your PDF remains perfectly sharp because text is vector-"
+"based. Only the images inside the document are optimized. We use a balanced "
+"compression profile designed to drastically lower file size while keeping "
+"images clear enough for professional reading and printing."
+msgstr ""
+"Нет. Текст в вашем PDF остается абсолютно четким, поскольку текст является "
+"векторным. Оптимизируются только изображения внутри документа. Мы используем "
+"сбалансированный профиль сжатия, разработанный для существенного снижения "
+"размера файла при сохранении достаточной четкости изображений для "
+"профессионального чтения и печати."
+
+#: converters/templates/converters/compress_pdf.html:71
+msgid "How much smaller will my file get?"
+msgstr "Насколько меньше станет мой файл?"
+
+#: converters/templates/converters/compress_pdf.html:72
+#, python-format
+msgid ""
+"It entirely depends on what is inside your PDF. If your document is made of "
+"raw, uncompressed camera photos, we can often shrink it by up to 90%%. If it "
+"is a purely text-based document that is already well-optimized, the size "
+"reduction will be minimal."
+msgstr ""
+"Это полностью зависит от того, что находится внутри вашего PDF. Если ваш "
+"документ состоит из необработанных несжатых фотографий с камеры, мы часто "
+"можем уменьшить его размер на величину до 90%%. Если это чисто текстовый "
+"документ, который уже хорошо оптимизирован, уменьшение размера будет "
+"минимальным."
+
+#: converters/templates/converters/compress_pdf.html:76
+msgid "Why is my PDF so large in the first place?"
+msgstr "Почему мой PDF изначально такой большой?"
+
+#: converters/templates/converters/compress_pdf.html:77
+msgid ""
+"Most PDFs become oversized because they were created from high-resolution "
+"scanner hardware, exported with \"print-quality\" presets from software like "
+"Adobe Illustrator, or contain duplicate font libraries."
+msgstr ""
+"Большинство PDF-файлов становятся слишком большими, потому что они были "
+"созданы с помощью сканеров высокого разрешения, экспортированы с пресетами "
+"\"качества печати\" из таких программ, как Adobe Illustrator, или содержат "
+"дублирующиеся библиотеки шрифтов."
+
+#: converters/templates/converters/compress_pdf.html:81
+msgid "Are my confidential documents secure?"
+msgstr "Защищены ли мои конфиденциальные документы?"
+
+#: converters/templates/converters/compress_pdf.html:82
+msgid ""
+"We treat your privacy seriously. Your files are processed securely through "
+"automated software. Neither the original heavy file nor the compressed "
+"result is ever read by humans. All data is automatically wiped from our "
+"cloud servers exactly one hour after upload."
+msgstr ""
+"Мы серьезно относимся к вашей конфиденциальности. Ваши файлы обрабатываются "
+"безопасно с помощью автоматизированного программного обеспечения. Ни "
+"исходный тяжелый файл, ни сжатый результат никогда не просматриваются "
+"людьми. Все данные автоматически удаляются с наших облачных серверов ровно "
+"через час после загрузки."
+
+#: converters/templates/converters/image_pdf.html:5
+msgid ""
+"Convert images and photos (JPG, PNG) into a single PDF file. Fast uploading, "
+"easy page sorting, and instant results."
+msgstr "Превращайте картинки и фотографии (JPG, PNG) в единый PDF-файл. Быстрая загрузка, простая сортировка страниц и мгновенный результат."
+
+#: converters/templates/converters/image_pdf.html:13
+msgid "Image to PDF Converter"
+msgstr "Конвертер изображений в PDF"
+
+#: converters/templates/converters/image_pdf.html:14
+msgid ""
+"Turn photos and images into a single PDF document. Simply upload up to 20 "
+"files and click the convert button."
+msgstr ""
+"Превратите фотографии и изображения в единый PDF-документ. Просто загрузите "
+"до 20 файлов и нажмите кнопку конвертации."
+
+#: converters/templates/converters/image_pdf.html:21
+msgid "Why convert Images to PDF?"
+msgstr "Зачем конвертировать изображения в PDF?"
+
+#: converters/templates/converters/image_pdf.html:23
+msgid ""
+"Sharing a single photograph is easy, but sending a dozen separate images of "
+"a scanned document, a design portfolio, or monthly receipts is a guaranteed "
+"way to confuse the recipient. Image formats like JPG and PNG do not support "
+"multiple pages, meaning they easily get lost or viewed out of order."
+msgstr ""
+"Поделиться одной фотографией легко, но отправка дюжины отдельных изображений "
+"отсканированного документа, дизайнерского портфолио или ежемесячных чеков — "
+"это гарантированный способ запутать получателя. Форматы изображений, такие "
+"как JPG и PNG, не поддерживают многостраничность, из-за чего их легко "
+"потерять или просмотреть не в том порядке."
+
+#: converters/templates/converters/image_pdf.html:26
+msgid ""
+"Our Image to PDF converter solves this by binding your separate pictures "
+"into one neat, multi-page document. By converting your photos into a "
+"universally accepted PDF, you ensure that your files are viewed exactly in "
+"the sequence you intended, formatted perfectly for both screen reading and "
+"printing."
+msgstr ""
+"Наш конвертер изображений в PDF решает эту проблему, объединяя ваши "
+"отдельные картинки в один аккуратный многостраничный документ. Конвертируя "
+"ваши фотографии в общепринятый формат PDF, вы гарантируете, что файлы будут "
+"просмотрены именно в той последовательности, которую вы задумали, и идеально "
+"отформатированы как для чтения с экрана, так и для печати."
+
+#: converters/templates/converters/image_pdf.html:31
+#: converters/templates/converters/pdf_to_pngjpg.html:42
+msgid "Common use cases"
+msgstr "Типичные сценарии использования"
+
+#: converters/templates/converters/image_pdf.html:34
+msgid "Freelancers & Designers"
+msgstr "Фрилансеры и дизайнеры"
+
+#: converters/templates/converters/image_pdf.html:35
+msgid ""
+"Combine individual design mockups, digital illustrations, or photography "
+"samples into a single, cohesive PDF portfolio. A multi-page PDF looks much "
+"more professional to clients than a ZIP file full of scattered images."
+msgstr ""
+"Объединяйте отдельные дизайнерские макеты, цифровые иллюстрации или примеры "
+"фотографий в единое целое PDF-портфолио. Многостраничный PDF выглядит для "
+"клиентов гораздо более профессионально, чем ZIP-архив, полный разрозненных "
+"картинок."
+
+#: converters/templates/converters/image_pdf.html:38
+msgid "Everyday Admin & Expenses"
+msgstr "Повседневные административные задачи и расходы"
+
+#: converters/templates/converters/image_pdf.html:39
+msgid ""
+"Took photos of your receipts, medical records, or ID cards with your "
+"smartphone? Merge those JPGs into one single PDF document before uploading "
+"them to your company's HR portal or government websites."
+msgstr ""
+"Сделали фотографии чеков, медицинских карт или удостоверений личности на "
+"смартфон? Объедините эти файлы JPG в один документ PDF перед загрузкой на HR-"
+"портал вашей компании или на правительственные сайты."
+
+#: converters/templates/converters/image_pdf.html:45
+msgid "Flexible and fast compilation"
+msgstr "Гибкая и быстрая компоновка"
+
+#: converters/templates/converters/image_pdf.html:49
+msgid "Drag-and-Drop Reordering:"
+msgstr "Изменение порядка перетаскиванием (Drag-and-Drop):"
+
+#: converters/templates/converters/image_pdf.html:49
+msgid ""
+"Upload your photos and easily drag their thumbnails to arrange them in the "
+"correct order. The first image becomes page one, the second becomes page "
+"two, and so on."
+msgstr ""
+"Загружайте фотографии и легко перетаскивайте их миниатюры, чтобы расположить "
+"их в нужном порядке. Первое изображение станет первой страницей, второе — "
+"второй и т. д."
+
+#: converters/templates/converters/image_pdf.html:53
+msgid "Format Agnostic:"
+msgstr "Независимость от формата:"
+
+#: converters/templates/converters/image_pdf.html:53
+msgid "You don't have to choose just one format. You can upload a mix of both"
+msgstr ""
+"Вам не нужно выбирать только один формат. Вы можете одновременно загружать"
+
+#: converters/templates/converters/image_pdf.html:53
+msgid "graphics and"
+msgstr "графику и"
+
+#: converters/templates/converters/image_pdf.html:53
+msgid "photographs at the same time and combine them into the same PDF."
+msgstr "фотографии и объединять их в один и тот же PDF."
+
+#: converters/templates/converters/image_pdf.html:57
+msgid "High-Fidelity Embedding:"
+msgstr "Внедрение с высокой точностью:"
+
+#: converters/templates/converters/image_pdf.html:67
+msgid "Can I mix different image sizes?"
+msgstr "Можно ли объединять изображения разных размеров?"
+
+#: converters/templates/converters/image_pdf.html:68
+msgid ""
+"Yes. Our converter automatically centers and scales your images to fit "
+"standard PDF page dimensions while maintaining their original aspect ratio. "
+"Your images won't be stretched or distorted."
+msgstr ""
+"Да. Наш конвертер автоматически центрирует и масштабирует ваши изображения "
+"так, чтобы они соответствовали стандартным размерам страниц PDF, сохраняя "
+"при этом их исходное соотношение сторон. Ваши изображения не будут растянуты "
+"или искажены."
+
+#: converters/templates/converters/image_pdf.html:72
+msgid "Will this reduce the quality of my images?"
+msgstr "Ухудшит ли это качество моих изображений?"
+
+#: converters/templates/converters/image_pdf.html:73
+msgid ""
+"No. Our tool is designed to compile files, not compress them aggressively. "
+"The resulting PDF will retain the high resolution of your original PNG or "
+"JPG uploads, making it perfectly suitable for high-quality printing."
+msgstr ""
+"Нет. Наш инструмент предназначен для компиляции файлов, а не для их "
+"агрессивного сжатия. Результирующий PDF сохранит высокое разрешение ваших "
+"исходных загруженных файлов PNG или JPG, что делает его идеально подходящим "
+"для качественной печати."
+
+#: converters/templates/converters/image_pdf.html:77
+msgid "How many images can I put into one PDF?"
+msgstr "Сколько изображений можно поместить в один PDF?"
+
+#: converters/templates/converters/image_pdf.html:78
+msgid ""
+"You can upload and convert up to 20 images per session. Each uploaded image "
+"will automatically be assigned its own individual page in the final PDF "
+"document."
+msgstr ""
+"Вы можете загружать и конвертировать до 20 изображений за сеанс. Каждому "
+"загруженному изображению автоматически будет назначена отдельная страница в "
+"конечном документе PDF."
+
+#: converters/templates/converters/image_pdf.html:82
+msgid "Are my personal photos kept private?"
+msgstr "Сохраняются ли мои личные фотографии конфиденциальными?"
+
+#: converters/templates/converters/image_pdf.html:83
+msgid ""
+"Absolutely. We process all uploads automatically on secure servers. Nobody "
+"has manual access to your photos. For your peace of mind, all original "
+"images and the generated PDF are permanently deleted from our servers one "
+"hour after conversion."
+msgstr ""
+"Определенно. Мы обрабатываем все загрузки автоматически на защищенных "
+"серверах. Ни у кого нет ручного доступа к вашим фотографиям. Для вашего "
+"спокойствия все исходные изображения и созданный PDF навсегда удаляются с "
+"наших серверов через один час после конвертации."
+
+#: converters/templates/converters/join_pdf.html:5
+msgid ""
+"Combine multiple PDF files into a single document. A user-friendly interface "
+"for rearranging pages and quickly merging documents online."
+msgstr ""
+"Соединяйте несколько PDF-файлов в один документ. Удобный интерфейс для изменения порядка страниц и быстрого склеивания документов онлайн."
+
+#: converters/templates/converters/join_pdf.html:11
+msgid "PDF Merger"
+msgstr "Объединение PDF"
+
+#: converters/templates/converters/join_pdf.html:12
+msgid ""
+"Combine multiple PDF files into a single, organized document. Simply upload "
+"up to 20 files and click the convert button."
+msgstr ""
+"Объедините несколько PDF-файлов в один организованный документ. Просто "
+"загрузите до 20 файлов и нажмите кнопку конвертации."
+
+#: converters/templates/converters/join_pdf.html:20
+msgid "Why join PDF files together?"
+msgstr "Зачем объединять PDF-файлы?"
+
+#: converters/templates/converters/join_pdf.html:22
+msgid ""
+"Sending multiple file attachments in an email looks unprofessional and is "
+"frustrating for the recipient to download, open, and organize. Whether you "
+"are dealing with scanned book chapters, scattered monthly invoices, or "
+"individual project reports, keeping them separate is a logistical headache."
+msgstr ""
+"Отправка нескольких вложений в одном письме выглядит непрофессионально и "
+"вызывает раздражение у получателя при скачивании, открытии и упорядочивании. "
+"Независимо от того, имеете ли вы дело со сканами глав книг, разрозненными "
+"ежемесячными счетами или отдельными отчетами по проектам, держать их "
+"отдельно — это логистическая головная боль."
+
+#: converters/templates/converters/join_pdf.html:25
+msgid ""
+"Our online PDF Merger allows you to combine multiple PDF documents into a "
+"single, cohesive file. It streamlines your digital workspace, making it "
+"infinitely easier to share, print, or archive your important documents "
+"without losing track of individual pages."
+msgstr ""
+"Наш онлайн-инструмент объединения PDF позволяет соединять несколько "
+"документов PDF в один цельный файл. Это оптимизирует ваше цифровое рабочее "
+"пространство, делая совместное использование, печать или архивирование "
+"важных документов намного проще, не теряя при этом из виду отдельные "
+"страницы."
+
+#: converters/templates/converters/join_pdf.html:30
+msgid "Who uses a PDF merger?"
+msgstr "Кто использует инструмент объединения PDF?"
+
+#: converters/templates/converters/join_pdf.html:33
+msgid "Legal & Real Estate Teams"
+msgstr "Юридические и риелторские команды"
+
+#: converters/templates/converters/join_pdf.html:34
+msgid ""
+"Compile exhaustive property portfolios, legal briefs, or contract addendums. "
+"Merge separately signed signature pages back into the main master document "
+"before sending it to clients or courts."
+msgstr ""
+"Составляйте исчерпывающие портфолио недвижимости, юридические сводки или "
+"приложения к контрактам. Объединяйте подписанные отдельно страницы с "
+"подписями обратно в основной мастер-документ перед отправкой клиентам или в "
+"суд."
+
+#: converters/templates/converters/join_pdf.html:37
+msgid "Accounting & Freelancers"
+msgstr "Бухгалтерия и фрилансеры"
+
+#: converters/templates/converters/join_pdf.html:38
+msgid ""
+"Instead of sending your accountant 15 individual PDF receipts at the end of "
+"the month, merge them into one organized \"Expense Report\" document to "
+"ensure nothing gets lost in transit."
+msgstr ""
+"Вместо того чтобы отправлять бухгалтеру 15 отдельных PDF-чеков в конце "
+"месяца, объедините их в один организованный документ \"Отчет о расходах\", "
+"чтобы ничто не потерялось при пересылке."
+
+#: converters/templates/converters/join_pdf.html:44
+msgid "Intuitive and lossless merging"
+msgstr "Интуитивное объединение без потерь"
+
+#: converters/templates/converters/join_pdf.html:48
+msgid "Visual Drag-and-Drop:"
+msgstr "Визуальное перетаскивание (Drag-and-Drop):"
+
+#: converters/templates/converters/join_pdf.html:48
+msgid ""
+"You have full control. Upload your files and simply drag their thumbnail "
+"cards to rearrange them into the exact sequence you need before hitting the "
+"merge button."
+msgstr ""
+"У вас полный контроль. Загрузите файлы и просто перетаскивайте их карточки-"
+"миниатюры, чтобы расположить их в нужной последовательности перед нажатием "
+"кнопки объединения."
+
+#: converters/templates/converters/join_pdf.html:52
+msgid "Lossless Quality:"
+msgstr "Качество без потерь:"
+
+#: converters/templates/converters/join_pdf.html:52
+msgid ""
+"Merging files does not alter the content inside them. Your text resolution, "
+"vector graphics, and page dimensions remain 100%% identical to the original "
+"uploads."
+msgstr ""
+"Объединение файлов не изменяет их содержимое. Разрешение текста, векторная "
+"графика и размеры страниц остаются на 100%% идентичными исходным загруженным "
+"файлам."
+
+#: converters/templates/converters/join_pdf.html:56
+msgid "Cross-Platform:"
+msgstr "Кроссплатформенность:"
+
+#: converters/templates/converters/join_pdf.html:56
+msgid ""
+"No need to install heavy desktop software like Adobe Acrobat. Merge files "
+"directly from your browser on Windows, Mac, Linux, or mobile devices."
+msgstr ""
+"Нет необходимости устанавливать тяжелое десктопное ПО вроде Adobe Acrobat. "
+"Объединяйте файлы прямо из браузера на Windows, Mac, Linux или мобильных "
+"устройствах."
+
+#: converters/templates/converters/join_pdf.html:66
+msgid "Can I rearrange the order of the files?"
+msgstr "Могу ли я изменить порядок файлов?"
+
+#: converters/templates/converters/join_pdf.html:67
+msgid ""
+"Yes! Once you upload your PDFs, they will appear as file cards on the "
+"screen. Simply click, hold, and drag the cards left or right to reorder "
+"them. The files will be combined in the exact order shown on your screen."
+msgstr ""
+"Да! Как только вы загрузите свои PDF, они появятся на экране в виде карточек "
+"файлов. Просто нажмите, удерживайте и перетаскивайте карточки влево или "
+"вправо, чтобы изменить их порядок. Файлы будут объединены ровно в том "
+"порядке, который отображается на вашем экране."
+
+#: converters/templates/converters/join_pdf.html:71
+msgid "How many files can I merge at once?"
+msgstr "Сколько файлов можно объединить за раз?"
+
+#: converters/templates/converters/join_pdf.html:72
+msgid ""
+"You can upload and merge up to 20 separate PDF files in a single session. If "
+"you have more than 20 files, you can merge the first batch, download the "
+"result, and then merge that new file with the remaining documents."
+msgstr ""
+"Вы можете загружать и объединять до 20 отдельных PDF-файлов за один сеанс. "
+"Если у вас более 20 файлов, вы можете объединить первую партию, скачать "
+"результат, а затем объединить этот новый файл с оставшимися документами."
+
+#: converters/templates/converters/join_pdf.html:76
+msgid "Will merging PDFs reduce their visual quality?"
+msgstr "Ухудшит ли объединение PDF их визуальное качество?"
+
+#: converters/templates/converters/join_pdf.html:77
+msgid ""
+"Not at all. Our tool performs a direct structural merge. We do not re-"
+"encode, compress, or rasterize the pages during this process. The final "
+"document will retain the exact same visual quality and text sharpness as "
+"your original files."
+msgstr ""
+"Совершенно нет. Наш инструмент выполняет прямое структурное объединение. Мы "
+"не перекодируем, не сжимаем и не растрируем страницы в этом процессе. "
+"Итоговый документ сохранит абсолютно такое же визуальное качество и четкость "
+"текста, как и ваши исходные файлы."
+
+#: converters/templates/converters/join_pdf.html:81
+msgid "Is it safe to merge confidential documents?"
+msgstr "Безопасно ли объединять конфиденциальные документы?"
+
+#: converters/templates/converters/join_pdf.html:82
+msgid ""
+"Absolutely. We employ strict privacy measures. Your files are merged "
+"automatically by our server scripts without any human intervention. Every "
+"uploaded file and the final merged document are permanently purged from our "
+"servers within one hour."
+msgstr ""
+"Совершенно верно. Мы применяем строгие меры конфиденциальности. Ваши файлы "
+"объединяются автоматически нашими серверными скриптами без вмешательства "
+"человека. Каждый загруженный файл и итоговый объединенный документ навсегда "
+"удаляются с наших серверов в течение одного часа."
+
+#: converters/templates/converters/pdf_ocr.html:5
+msgid ""
+"Free online OCR converter. Recognize and extract text from scanned PDF "
+"documents and images for further editing."
+msgstr "Бесплатный онлайн OCR-конвертер. Распознавайте и извлекайте текст из отсканированных PDF-документов и изображений для дальнейшего редактирования."
+
+#: converters/templates/converters/pdf_ocr.html:11
+msgid "PDF OCR Tool"
+msgstr "Инструмент OCR для PDF"
+
+#: converters/templates/converters/pdf_ocr.html:12
+msgid ""
+"Extract editable text from scanned PDF documents or images. Simply upload up "
+"to 20 files and click the convert button."
+msgstr ""
+"Извлекайте редактируемый текст из сканированных PDF-документов или "
+"изображений. Просто загрузите до 20 файлов и нажмите кнопку конвертации."
+
+#: converters/templates/converters/pdf_ocr.html:20
+msgid "Why use an OCR PDF tool?"
+msgstr "Зачем использовать инструмент OCR для PDF?"
+
+#: converters/templates/converters/pdf_ocr.html:22
+msgid ""
+"Not all PDFs are created equal. When you scan a physical paper document or "
+"take a photo of a page, the resulting PDF is essentially just a flat image. "
+"You cannot select the text, copy a paragraph, or search for specific "
+"keywords. The information is locked."
+msgstr ""
+"Все PDF-файлы разные. Когда вы сканируете физический бумажный документ или "
+"фотографируете страницу, полученный PDF по сути является просто плоским "
+"изображением. Вы не можете выделить текст, скопировать абзац или найти "
+"определенные ключевые слова. Информация заблокирована."
+
+#: converters/templates/converters/pdf_ocr.html:25
+msgid ""
+"Our Optical Character Recognition (OCR) engine acts as a digital translator. "
+"It scans the visual layer of your document, identifies individual letters "
+"and words, and extracts them into a readable, editable format. Instead of "
+"manually retyping pages of text, you can digitize your documents in seconds."
+msgstr ""
+"Наш модуль оптического распознавания символов (OCR) работает как цифровой "
+"переводчик. Он сканирует визуальный слой вашего документа, определяет "
+"отдельные буквы и слова и извлекает их в читаемый, редактируемый формат. "
+"Вместо того чтобы вручную перепечатывать страницы текста, вы можете "
+"оцифровать документы за считанные секунды."
+
+#: converters/templates/converters/pdf_ocr.html:30
+msgid "Who benefits from OCR?"
+msgstr "Кому полезен OCR?"
+
+#: converters/templates/converters/pdf_ocr.html:33
+msgid "University Students & Academics"
+msgstr "Студенты университетов и ученые"
+
+#: converters/templates/converters/pdf_ocr.html:34
+msgid ""
+"Stop wasting time retyping material. Instantly extract text from scanned "
+"library books, printed lab reports, and physical lecture notes to quote them "
+"directly in your own assignments and research papers."
+msgstr ""
+"Хватит тратить время на перепечатку материалов. Мгновенно извлекайте текст "
+"из сканированных библиотечных книг, печатных лабораторных отчетов и "
+"физических конспектов лекций, чтобы цитировать их напрямую в собственных "
+"заданиях и научных работах."
+
+#: converters/templates/converters/pdf_ocr.html:37
+msgid "Accounting & Administration"
+msgstr "Бухгалтерия и административный отдел"
+
+#: converters/templates/converters/pdf_ocr.html:38
+msgid ""
+"Digitize printed invoices, paper receipts, and physical contracts. Transform "
+"unsearchable paper archives into accessible digital text that you can easily "
+"copy into spreadsheets, databases, or ERP systems."
+msgstr ""
+"Оцифровывайте печатные счета, бумажные чеки и физические контракты. "
+"Превращайте недоступные для поиска бумажные архивы в доступный цифровой "
+"текст, который вы можете легко скопировать в электронные таблицы, базы "
+"данных или ERP-системы."
+
+#: converters/templates/converters/pdf_ocr.html:44
+msgid "Advanced text extraction"
+msgstr "Усовершенствованное извлечение текста"
+
+#: converters/templates/converters/pdf_ocr.html:48
+msgid "Multi-Language Recognition:"
+msgstr "Многоязычное распознавание:"
+
+#: converters/templates/converters/pdf_ocr.html:48
+msgid ""
+"Our engine doesn't just read English. It accurately identifies characters "
+"across multiple alphabets, making it perfect for international documents and "
+"localized texts."
+msgstr ""
+"Наш движок не просто читает по-английски. Он точно распознает символы в "
+"разных алфавитах, что делает его идеальным для международных документов и "
+"локализованных текстов."
+
+#: converters/templates/converters/pdf_ocr.html:52
+msgid "High Accuracy Algorithm:"
+msgstr "Алгоритм высокой точности:"
+
+#: converters/templates/converters/pdf_ocr.html:52
+msgid ""
+"We utilize advanced machine learning patterns to distinguish between similar-"
+"looking characters (like the number \"1\", capital \"I\", and lowercase "
+"\"l\") even in lower-quality scans."
+msgstr ""
+"Мы используем передовые модели машинного обучения для различения похожих "
+"символов (таких как цифра \"1\", заглавная \"I\" и строчная \"l\") даже в "
+"сканах низкого качества."
+
+#: converters/templates/converters/pdf_ocr.html:56
+msgid "Asynchronous Processing:"
+msgstr "Асинхронная обработка:"
+
+#: converters/templates/converters/pdf_ocr.html:56
+msgid ""
+"OCR is a computationally heavy task. Our server handles the intensive "
+"processing in the background, ensuring your browser remains responsive while "
+"the text is being extracted."
+msgstr ""
+"OCR — это ресурсоемкая задача. Наш сервер выполняет интенсивную обработку в "
+"фоновом режиме, гарантируя, что ваш браузер останется отзывчивым во время "
+"извлечения текста."
+
+#: converters/templates/converters/pdf_ocr.html:66
+msgid "What does OCR actually stand for?"
+msgstr "Что на самом деле означает аббревиатура OCR?"
+
+#: converters/templates/converters/pdf_ocr.html:67
+msgid ""
+"OCR stands for Optical Character Recognition. It is a technology that "
+"recognizes text within a digital image. It is commonly used to recognize "
+"text in scanned documents and photos, converting a physical paper record "
+"into editable digital data."
+msgstr ""
+"OCR расшифровывается как Optical Character Recognition (оптическое "
+"распознавание символов). Это технология, которая распознает текст на "
+"цифровом изображении. Она обычно используется для распознавания текста в "
+"сканированных документах и фотографиях, преобразуя физическую бумажную "
+"запись в редактируемые цифровые данные."
+
+#: converters/templates/converters/pdf_ocr.html:71
+msgid "Can the tool read handwritten notes?"
+msgstr "Может ли инструмент читать рукописные заметки?"
+
+#: converters/templates/converters/pdf_ocr.html:72
+msgid ""
+"Our OCR engine is primarily optimized for printed, typed text (like books, "
+"printed reports, and official documents). While it may recognize "
+"exceptionally clear and block-lettered handwriting, cursive or messy "
+"handwritten notes will generally produce inaccurate results."
+msgstr ""
+"Наш OCR-движок в первую очередь оптимизирован для печатного, набранного "
+"текста (например, книг, печатных отчетов и официальных документов). Хотя он "
+"может распознавать исключительно четкий печатный почерк, курсив или "
+"неразборчивые рукописные заметки, как правило, будут давать неточные "
+"результаты."
+
+#: converters/templates/converters/pdf_ocr.html:76
+msgid "What affects the quality of the extracted text?"
+msgstr "Что влияет на качество извлеченного текста?"
+
+#: converters/templates/converters/pdf_ocr.html:81
+msgid "Are my scanned documents kept private?"
+msgstr "Сохраняются ли мои отсканированные документы конфиденциальными?"
+
+#: converters/templates/converters/pdf_ocr.html:82
+msgid ""
+"Absolutely. We know scanned documents often contain sensitive personal or "
+"business information. Your files are processed entirely by automated "
+"algorithms without human interaction. All uploads and generated text files "
+"are permanently deleted from our servers one hour after processing."
+msgstr ""
+"Абсолютно. Мы знаем, что сканированные документы часто содержат "
+"конфиденциальную личную или деловую информацию. Ваши файлы обрабатываются "
+"исключительно автоматизированными алгоритмами без участия человека. Все "
+"загруженные и сгенерированные текстовые файлы навсегда удаляются с наших "
+"серверов через один час после обработки."
+
+#: converters/templates/converters/pdf_to_pngjpg.html:5
+msgid ""
+"Extract PDF pages or convert them into high-quality JPG/PNG images. Process "
+"files online in just a few clicks—no software installation required."
+msgstr "Извлекайте страницы PDF или конвертируйте их в качественные JPG/PNG изображения. Обработка онлайн в пару кликов без установки программ."
+
+#: converters/templates/converters/pdf_to_pngjpg.html:23
+msgid "PDF to Image Converter"
+msgstr "Конвертер PDF в изображения"
+
+#: converters/templates/converters/pdf_to_pngjpg.html:24
+msgid ""
+"Convert PDF pages into high-quality individual images. Simply upload up to "
+"20 files and click the convert button."
+msgstr ""
+"Конвертируйте страницы PDF в отдельные высококачественные изображения. "
+"Просто загрузите до 20 файлов и нажмите кнопку конвертации."
+
+#: converters/templates/converters/pdf_to_pngjpg.html:32
+msgid "Why convert PDF to Image formats?"
+msgstr "Зачем конвертировать PDF в форматы изображений?"
+
+#: converters/templates/converters/pdf_to_pngjpg.html:34
+msgid ""
+"While PDFs are the global standard for document sharing, they aren't always "
+"universally accepted. If you want to embed a specific page into a PowerPoint "
+"presentation, share a document snippet on social media, or upload ID scans "
+"to a verification portal, you need standard image files."
+msgstr ""
+"Хотя PDF являются глобальным стандартом обмена документами, они принимаются "
+"не везде. Если вы хотите встроить определенную страницу в презентацию "
+"PowerPoint, поделиться фрагментом документа в соцсетях или загрузить сканы "
+"удостоверения личности на портал верификации, вам нужны стандартные файлы "
+"изображений."
+
+#: converters/templates/converters/pdf_to_pngjpg.html:37
+msgid ""
+"Our PDF to Image converter safely rasterizes your documents. It takes each "
+"individual page of your PDF and renders it into a high-quality, standalone "
+"picture. Whether you need a lossless"
+msgstr ""
+"Наш конвертер PDF в изображения безопасно растрирует ваши документы. Он "
+"берет каждую отдельную страницу вашего PDF и преобразует ее в "
+"высококачественную автономную картинку. Независимо от того, нужен ли вам "
+"формат без потерь"
+
+#: converters/templates/converters/pdf_to_pngjpg.html:37
+msgid "for sharp text or a compressed"
+msgstr "для четкого текста или сжатый формат"
+
+#: converters/templates/converters/pdf_to_pngjpg.html:37
+msgid "for smaller file sizes, you get pixel-perfect results instantly."
+msgstr ""
+"для уменьшения размера файла, вы мгновенно получаете идеальный результат."
+
+#: converters/templates/converters/pdf_to_pngjpg.html:45
+msgid "Web Forms & KYC Verification"
+msgstr "Веб-формы и верификация KYC"
+
+#: converters/templates/converters/pdf_to_pngjpg.html:46
+msgid ""
+"Many government portals, banks, and visa applications do not accept PDF "
+"uploads for security reasons. Easily convert your passport scans or utility "
+"bills into compliant JPG images."
+msgstr ""
+"Многие государственные порталы, банки и визовые центры не принимают загрузку "
+"PDF из соображений безопасности. С легкостью конвертируйте сканы паспорта "
+"или квитанции на коммунальные услуги в совместимые изображения JPG."
+
+#: converters/templates/converters/pdf_to_pngjpg.html:49
+msgid "Social Media & Design"
+msgstr "Социальные сети и дизайн"
+
+#: converters/templates/converters/pdf_to_pngjpg.html:50
+msgid ""
+"You cannot directly post a PDF to Instagram, Facebook, or Pinterest. Convert "
+"your digital flyers, infographics, or portfolio pages into high-resolution "
+"PNGs ready for publishing."
+msgstr ""
+"Вы не можете напрямую опубликовать PDF в Instagram, Facebook или Pinterest. "
+"Конвертируйте ваши цифровые флаеры, инфографику или страницы портфолио в "
+"файлы PNG высокого разрешения, готовые к публикации."
+
+#: converters/templates/converters/pdf_to_pngjpg.html:56
+msgid "High-fidelity rendering"
+msgstr "Рендеринг с высокой точностью"
+
+#: converters/templates/converters/pdf_to_pngjpg.html:60
+msgid "4x Resolution Quality:"
+msgstr "Качество с четырехкратным разрешением (4x):"
+
+#: converters/templates/converters/pdf_to_pngjpg.html:60
+msgid ""
+"We don't output blurry thumbnails. Our engine renders pages at high DPI "
+"(dots per inch), ensuring that small text, complex blueprints, and detailed "
+"graphs remain crystal clear."
+msgstr ""
+"Мы не выдаем размытые миниатюры. Наш движок рендерит страницы с высоким "
+"разрешением DPI (точек на дюйм), гарантируя, что мелкий текст, сложные "
+"чертежи и детализированные графики останутся кристально чистыми."
+
+#: converters/templates/converters/pdf_to_pngjpg.html:64
+msgid "Smart ZIP Export:"
+msgstr "Умный экспорт в ZIP:"
+
+#: converters/templates/converters/pdf_to_pngjpg.html:64
+msgid ""
+"Converting a 50-page PDF? Your browser won't be flooded with 50 separate "
+"downloads. All your newly generated images are neatly packed into a single "
+"ZIP archive."
+msgstr ""
+"Конвертируете 50-страничный PDF? Ваш браузер не будет завален 50 отдельными "
+"загрузками. Все ваши вновь сгенерированные изображения аккуратно упакованы в "
+"один ZIP-архив."
+
+#: converters/templates/converters/pdf_to_pngjpg.html:68
+msgid "Format Flexibility:"
+msgstr "Гибкость форматов:"
+
+#: converters/templates/converters/pdf_to_pngjpg.html:68
+msgid ""
+"Choose PNG to prevent text pixelation (lossless), or choose JPG to keep your "
+"overall file size as small as possible (lossy)."
+msgstr ""
+"Выберите PNG, чтобы предотвратить пикселизацию текста (без потерь), или "
+"выберите JPG, чтобы сделать общий размер файла как можно меньше (с потерями)."
+
+#: converters/templates/converters/pdf_to_pngjpg.html:78
+msgid "Should I choose PNG or JPG?"
+msgstr "Что выбрать — PNG или JPG?"
+
+#: converters/templates/converters/pdf_to_pngjpg.html:79
+msgid "Choose "
+msgstr "Выберите "
+
+#: converters/templates/converters/pdf_to_pngjpg.html:79
+msgid ""
+"if your PDF contains a lot of text, flat graphics, charts, or logos. PNG "
+"uses lossless compression, meaning the edges of letters will remain "
+"incredibly sharp. Choose "
+msgstr ""
+"если ваш PDF содержит много текста, плоской графики, диаграмм или логотипов. "
+"PNG использует сжатие без потерь, а значит, края букв останутся невероятно "
+"четкими. Выберите "
+
+#: converters/templates/converters/pdf_to_pngjpg.html:79
+msgid ""
+"if your PDF is mostly photographs or large scanned images, as it will "
+"significantly reduce the file size."
+msgstr ""
+"если ваш PDF состоит в основном из фотографий или крупных сканированных "
+"изображений, так как это значительно уменьшит размер файла."
+
+#: converters/templates/converters/pdf_to_pngjpg.html:83
+msgid "How do you handle multi-page PDFs?"
+msgstr "Как обрабатываются многостраничные PDF?"
+
+#: converters/templates/converters/pdf_to_pngjpg.html:84
+msgid ""
+"Every page of your PDF becomes a separate image file. For example, if you "
+"upload a 5-page PDF, our server will generate 5 images. They are then "
+"automatically bundled into one ZIP file, which you can extract on your "
+"computer or smartphone."
+msgstr ""
+"Каждая страница вашего PDF становится отдельным файлом изображения. "
+"Например, если вы загрузите 5-страничный PDF, наш сервер сгенерирует 5 "
+"изображений. Затем они автоматически упаковываются в один ZIP-файл, который "
+"вы можете распаковать на своем компьютере или смартфоне."
+
+#: converters/templates/converters/pdf_to_pngjpg.html:88
+msgid "Will the images be too large to send via email?"
+msgstr ""
+"Не окажутся ли изображения слишком большими для отправки по электронной "
+"почте?"
+
+#: converters/templates/converters/pdf_to_pngjpg.html:89
+msgid ""
+"If you are worried about file limits when emailing attachments, we recommend "
+"selecting the JPG format. JPGs provide an excellent balance between visual "
+"quality and a compact footprint."
+msgstr ""
+"Если вы беспокоитесь об ограничениях на размер файлов при отправке вложений "
+"по электронной почте, мы рекомендуем выбрать формат JPG. Формат JPG "
+"обеспечивает отличный баланс между визуальным качеством и компактным объемом."
+
+#: converters/templates/converters/pdf_to_pngjpg.html:94
+msgid ""
+"Yes. We prioritize your privacy. Uploaded PDFs and the resulting image files "
+"are processed strictly by automated scripts. After 1 hour, all files "
+"associated with your session are permanently deleted from our servers. We do "
+"not retain, share, or analyze your data."
+msgstr ""
+"Да. Мы ставим вашу конфиденциальность на первое место. Загруженные PDF и "
+"результирующие файлы изображений обрабатываются строго автоматизированными "
+"скриптами. Через 1 час все файлы, связанные с вашей сессией, навсегда "
+"удаляются с наших серверов. Мы не храним, не передаем и не анализируем ваши "
+"данные."
+
+#: converters/templates/converters/pdf_to_word.html:8
+msgid ""
+"Convert PDF to editable Word (DOCX) without losing formatting. Accurate text "
+"and table recognition. Fast, free, and secure."
+msgstr "Конвертируйте PDF в редактируемый Word (DOCX) без потери форматирования. Точное распознавание текста и таблиц. Быстро, бесплатно и безопасно."
+
+#: converters/templates/converters/pdf_to_word.html:12
+msgid "PDF to Word Converter"
+msgstr "Конвертер PDF в Word"
+
+#: converters/templates/converters/pdf_to_word.html:13
+msgid ""
+"Convert PDF files to editable Word documents. Simply upload up to 20 files "
+"and click the convert button."
+msgstr ""
+"Конвертируйте файлы PDF в редактируемые документы Word. Просто загрузите до "
+"20 файлов и нажмите кнопку конвертации."
+
+#: converters/templates/converters/pdf_to_word.html:21
+msgid "Why convert PDF to Word?"
+msgstr "Зачем конвертировать PDF в Word?"
+
+#: converters/templates/converters/pdf_to_word.html:23
+msgid ""
+"PDFs are perfect for sharing and printing because they lock your formatting "
+"in place. But what happens when you need to fix a typo in a contract, update "
+"a CV, or extract data from a 50-page university report? Retyping everything "
+"manually is a waste of time."
+msgstr ""
+"PDF идеально подходят для обмена и печати, поскольку фиксируют "
+"форматирование. Но что делать, если нужно исправить опечатку в контракте, "
+"обновить резюме или извлечь данные из 50-страничного университетского "
+"отчета? Перепечатывать все вручную — пустая трата времени."
+
+#: converters/templates/converters/pdf_to_word.html:26
+msgid ""
+"Our PDF to Word converter acts as a bridge. It reverse-engineers the PDF "
+"document, identifying text blocks, tables, and images, and reconstructs them "
+"into a fully editable Microsoft Word"
+msgstr ""
+"Наш конвертер PDF в Word служит мостом. Он выполняет обратную разработку "
+"документа PDF, определяя текстовые блоки, таблицы и изображения, и "
+"воссоздает их в полностью редактируемом файле Microsoft Word"
+
+#: converters/templates/converters/pdf_to_word.html:26
+msgid ""
+"file. You get your document back, ready for editing, without losing the "
+"original layout."
+msgstr ""
+" . Вы получаете обратно свой документ, готовый к редактированию, без потери "
+"исходного макета."
+
+#: converters/templates/converters/pdf_to_word.html:31
+msgid "Who uses this tool?"
+msgstr "Кто использует этот инструмент?"
+
+#: converters/templates/converters/pdf_to_word.html:34
+msgid "Students & Researchers"
+msgstr "Студенты и исследователи"
+
+#: converters/templates/converters/pdf_to_word.html:35
+msgid ""
+"Easily extract text from scanned lecture notes, textbook chapters, or "
+"research papers to include in your own thesis or assignments without manual "
+"copying."
+msgstr ""
+"Легко извлекайте текст из сканированных конспектов лекций, глав учебников "
+"или научных работ, чтобы включить их в собственную диссертацию или задания "
+"без ручного копирования."
+
+#: converters/templates/converters/pdf_to_word.html:38
+msgid "Office & Legal Professionals"
+msgstr "Офисные сотрудники и юристы"
+
+#: converters/templates/converters/pdf_to_word.html:39
+msgid ""
+"Turn locked non-disclosure agreements (NDAs), invoices, and corporate "
+"reports back into editable drafts. Revise terms or correct figures instantly."
+msgstr ""
+"Превращайте заблокированные соглашения о неразглашении (NDA), счета и "
+"корпоративные отчеты обратно в редактируемые черновики. Мгновенно "
+"пересматривайте условия или исправляйте цифры."
+
+#: converters/templates/converters/pdf_to_word.html:45
+msgid "Built for speed and accuracy"
+msgstr "Создано для скорости и точности"
+
+#: converters/templates/converters/pdf_to_word.html:49
+msgid "Smart Layout Retention:"
+msgstr "Умное сохранение макета:"
+
+#: converters/templates/converters/pdf_to_word.html:49
+msgid ""
+"We don't just dump text into a file. Our engine respects paragraph breaks, "
+"font styles, and table structures so you don't spend hours fixing formatting."
+msgstr ""
+"Мы не просто сбрасываем текст в файл. Наш движок учитывает разрывы абзацев, "
+"стили шрифтов и структуры таблиц, поэтому вам не придется тратить часы на "
+"исправление форматирования."
+
+#: converters/templates/converters/pdf_to_word.html:53
+msgid "Scanned Document Support (OCR):"
+msgstr "Поддержка сканированных документов (OCR):"
+
+#: converters/templates/converters/pdf_to_word.html:57
+msgid "Background Batch Processing:"
+msgstr "Фоновая пакетная обработка:"
+
+#: converters/templates/converters/pdf_to_word.html:57
+msgid ""
+"Converting 20 files at once? Your browser won't freeze. Our asynchronous "
+"servers handle heavy lifting in the background—just wait for the ZIP "
+"download button to appear."
+msgstr ""
+"Конвертируете 20 файлов за раз? Ваш браузер не зависнет. Наши асинхронные "
+"серверы выполняют всю тяжелую работу в фоновом режиме — просто дождитесь "
+"появления кнопки загрузки ZIP."
+
+#: converters/templates/converters/pdf_to_word.html:67
+msgid "Is my sensitive data safe on your servers?"
+msgstr "В безопасности ли мои конфиденциальные данные на ваших серверах?"
+
+#: converters/templates/converters/pdf_to_word.html:68
+msgid ""
+"Absolutely. We process files automatically. No human eyes ever see your "
+"documents. Once the conversion is complete, the original PDF and the "
+"generated Word file are permanently wiped from our database after 1 hour. "
+"Your files are never stored beyond the 1-hour window."
+msgstr ""
+"Абсолютно. Мы обрабатываем файлы автоматически. Ни один человек никогда не "
+"видит ваши документы. После завершения конвертации исходный PDF и созданный "
+"файл Word навсегда удаляются из нашей базы данных через 1 час. Ваши файлы "
+"никогда не хранятся дольше этого 1-часового окна."
+
+#: converters/templates/converters/pdf_to_word.html:72
+msgid "Will my tables and images stay in place?"
+msgstr "Останутся ли мои таблицы и изображения на своих местах?"
+
+#: converters/templates/converters/pdf_to_word.html:73
+#, python-format
+msgid ""
+"In 95%% of cases, yes. Standard tables, headers, and images are converted "
+"perfectly. However, highly complex graphical PDFs (like magazines with "
+"overlapping layers) might require minor manual adjustments in Word after "
+"conversion."
+msgstr ""
+"В 95%% случаев — да. Стандартные таблицы, заголовки и изображения "
+"конвертируются идеально. Однако для очень сложных графических PDF (например, "
+"журналов с перекрывающимися слоями) могут потребоваться небольшие ручные "
+"корректировки в Word после конвертации."
+
+#: converters/templates/converters/pdf_to_word.html:77
+msgid "Why is this completely free? Are there hidden limits?"
+msgstr "Почему это совершенно бесплатно? Есть ли скрытые лимиты?"
+
+#: converters/templates/converters/pdf_to_word.html:78
+msgid ""
+"We believe basic document utility should be accessible. Currently, you can "
+"process up to 20 files per session without creating an account."
+msgstr ""
+"Мы считаем, что базовые инструменты для работы с документами должны быть "
+"доступны. В настоящее время вы можете обрабатывать до 20 файлов за сеанс без "
+"создания учетной записи."
+
+#: converters/templates/converters/pdf_to_word.html:82
+msgid "Can I use this on a Mac or mobile phone?"
+msgstr "Могу ли я использовать это на Mac или мобильном телефоне?"
+
+#: converters/templates/converters/pdf_to_word.html:83
+msgid ""
+"Yes, the tool is entirely browser-based. Whether you are using Windows, "
+"macOS, Linux, iOS, or Android, as long as you have an internet connection, "
+"you can convert your files."
+msgstr ""
+"Да, инструмент полностью работает в браузере. Независимо от того, "
+"используете ли вы Windows, macOS, Linux, iOS или Android, пока у вас есть "
+"подключение к интернету, вы можете конвертировать свои файлы."
+
+#: converters/templates/converters/word_to_pdf.html:5
+msgid ""
+"Save Word documents (DOC/DOCX) in PDF format. We guarantee the accurate "
+"preservation of your document"
+msgstr "Сохраняйте документы Word (DOC/DOCX) в формат PDF. Гарантируем точное сохранение оригинальных шрифтов, отступов и верстки вашего документа."
+
+#: converters/templates/converters/word_to_pdf.html:10
+msgid "Word to PDF Converter"
+msgstr "Конвертер Word в PDF"
+
+#: converters/templates/converters/word_to_pdf.html:11
+msgid ""
+"Convert Word documents into secure, universally compatible PDF files. Simply "
+"upload up to 20 files and click the convert button."
+msgstr ""
+"Конвертируйте документы Word в безопасные и универсально совместимые PDF-"
+"файлы. Просто загрузите до 20 файлов и нажмите кнопку конвертации."
+
+#: converters/templates/converters/word_to_pdf.html:19
+msgid "Why convert Word documents to PDF?"
+msgstr "Зачем конвертировать документы Word в PDF?"
+
+#: converters/templates/converters/word_to_pdf.html:21
+msgid ""
+"Microsoft Word is fantastic for drafting and editing, but it can be "
+"unreliable for sharing. A "
+msgstr ""
+"Microsoft Word отлично подходит для создания черновиков и редактирования, но "
+"он может быть ненадежен для обмена. Файл формата "
+
+#: converters/templates/converters/word_to_pdf.html:21
+msgid ""
+"file that looks perfectly formatted on your screen might suffer from broken "
+"margins, replaced fonts, or misaligned tables when opened on a colleague's "
+"Mac, a mobile phone, or in different software like Google Docs."
+msgstr ""
+", который выглядит идеально отформатированным на вашем экране, может "
+"пострадать от смещения полей, замены шрифтов или несогласованности таблиц "
+"при открытии на Mac коллеги, мобильном телефоне или в другом ПО, таком как "
+"Google Документы."
+
+#: converters/templates/converters/word_to_pdf.html:24
+msgid ""
+"Converting your Word document to PDF \"locks\" the layout in place. Our "
+"online Word to PDF converter ensures that your carefully crafted resumes, "
+"legal contracts, and academic assignments look exactly as you intended, "
+"preserving a professional appearance across any device or operating system."
+msgstr ""
+"Конвертация документа Word в PDF \"фиксирует\" макет на месте. Наш онлайн-"
+"конвертер Word в PDF гарантирует, что ваши тщательно составленные резюме, "
+"юридические контракты и академические задания будут выглядеть именно так, "
+"как вы задумали, сохраняя профессиональный внешний вид на любом устройстве "
+"или операционной системе."
+
+#: converters/templates/converters/word_to_pdf.html:29
+msgid "Who needs this tool?"
+msgstr "Кому нужен этот инструмент?"
+
+#: converters/templates/converters/word_to_pdf.html:32
+msgid "Job Seekers & Freelancers"
+msgstr "Соискатели и фрилансеры"
+
+#: converters/templates/converters/word_to_pdf.html:33
+msgid ""
+"Never send a CV or an invoice in Word format. Recruiters and clients might "
+"open your file on mobile devices where Word formatting breaks. A PDF "
+"guarantees your document looks professional and prevents accidental edits."
+msgstr ""
+"Никогда не отправляйте резюме или счет в формате Word. Рекрутеры и клиенты "
+"могут открыть ваш файл на мобильных устройствах, где форматирование Word "
+"нарушается. PDF гарантирует, что ваш документ будет выглядеть "
+"профессионально и предотвратит случайные изменения."
+
+#: converters/templates/converters/word_to_pdf.html:36
+msgid "Students & Educators"
+msgstr "Студенты и преподаватели"
+
+#: converters/templates/converters/word_to_pdf.html:37
+msgid ""
+"Submit essays, research papers, and thesis drafts with confidence. Avoid "
+"grading penalties caused by pagination errors or missing charts when your "
+"professor uses a different version of Office."
+msgstr ""
+"Уверенно сдавайте эссе, научные работы и черновики диссертаций. Избегайте "
+"снижения оценок из-за ошибок нумерации страниц или пропавших графиков, когда "
+"ваш профессор использует другую версию Office."
+
+#: converters/templates/converters/word_to_pdf.html:43
+msgid "Flawless document rendering"
+msgstr "Безупречный рендеринг документов"
+
+#: converters/templates/converters/word_to_pdf.html:47
+msgid "Strict Layout Preservation:"
+msgstr "Строгое сохранение макета:"
+
+#: converters/templates/converters/word_to_pdf.html:47
+msgid ""
+"Our conversion engine accurately translates exact line spacing, margins, "
+"complex tables, and embedded graphics into the final PDF without shifting "
+"content."
+msgstr ""
+"Наш механизм конвертации точно переносит межстрочный интервал, поля, сложные "
+"таблицы и внедренную графику в конечный PDF без смещения содержимого."
+
+#: converters/templates/converters/word_to_pdf.html:51
+msgid "Universal Compatibility:"
+msgstr "Универсальная совместимость:"
+
+#: converters/templates/converters/word_to_pdf.html:51
+msgid "Whether you are uploading a modern"
+msgstr "Независимо от того, загружаете ли вы современный"
+
+#: converters/templates/converters/word_to_pdf.html:51
+msgid "file or an older legacy"
+msgstr "файл или более старый устаревший"
+
+#: converters/templates/converters/word_to_pdf.html:51
+msgid "document, our tool processes both seamlessly."
+msgstr "документ, наш инструмент легко обрабатывает оба варианта."
+
+#: converters/templates/converters/word_to_pdf.html:55
+msgid "No Watermarks:"
+msgstr "Без водяных знаков:"
+
+#: converters/templates/converters/word_to_pdf.html:55
+msgid ""
+"We believe in providing a clean, professional output. Your final PDF will be "
+"completely free of intrusive watermarks or forced branding."
+msgstr ""
+"Мы стремимся предоставлять чистый и профессиональный результат. Ваш итоговый "
+"PDF будет абсолютно свободен от навязчивых водяных знаков или "
+"принудительного брендинга."
+
+#: converters/templates/converters/word_to_pdf.html:65
+msgid "Why use an online tool instead of \"Save as PDF\" in Word?"
+msgstr ""
+"Почему стоит использовать онлайн-инструмент вместо \"Сохранить как PDF\" в "
+"Word?"
+
+#: converters/templates/converters/word_to_pdf.html:66
+msgid ""
+"While desktop Word has a built-in export feature, you might be working on a "
+"mobile device, using a borrowed computer, or simply don't have a paid "
+"Microsoft Office license installed. Our browser-based tool provides a fast, "
+"free alternative without requiring any heavy software."
+msgstr ""
+"Хотя в настольной версии Word есть встроенная функция экспорта, вы можете "
+"работать на мобильном устройстве, использовать чужой компьютер или просто не "
+"иметь установленной платной лицензии Microsoft Office. Наш инструмент на "
+"базе браузера предоставляет быструю, бесплатную альтернативу без "
+"необходимости установки громоздкого ПО."
+
+#: converters/templates/converters/word_to_pdf.html:70
+msgid "Will my custom fonts display correctly?"
+msgstr "Будут ли мои пользовательские шрифты отображаться корректно?"
+
+#: converters/templates/converters/word_to_pdf.html:71
+msgid ""
+"Yes. Our rendering engine automatically embeds standard formatting directly "
+"into the PDF. This ensures the text remains identical, even if the person "
+"opening the PDF doesn't have those specific fonts installed on their machine."
+msgstr ""
+"Да. Наш механизм рендеринга автоматически внедряет стандартное "
+"форматирование непосредственно в PDF. Это гарантирует, что текст останется "
+"неизменным, даже если у человека, открывающего PDF, эти конкретные шрифты не "
+"установлены на компьютере."
+
+#: converters/templates/converters/word_to_pdf.html:75
+msgid "Can I convert multiple Word documents at once?"
+msgstr "Могу ли я конвертировать несколько документов Word одновременно?"
+
+#: converters/templates/converters/word_to_pdf.html:76
+msgid ""
+"Absolutely. You can drag and drop multiple Word files into the upload zone. "
+"Our server processes them asynchronously, and you can download all the "
+"resulting PDFs together in a single ZIP archive, saving you time."
+msgstr ""
+"Конечно. Вы можете перетащить несколько файлов Word в зону загрузки. Наш "
+"сервер обрабатывает их асинхронно, и вы можете скачать все результирующие "
+"PDF вместе в одном ZIP-архиве, сэкономив свое время."
+
+#: converters/templates/converters/word_to_pdf.html:80
+msgid "Is my private information protected?"
+msgstr "Защищена ли моя личная информация?"
+
+#: converters/templates/converters/word_to_pdf.html:81
+msgid ""
+"Security is our priority. Your documents are uploaded via a secure "
+"connection and processed entirely by automated scripts. No human ever "
+"accesses your files. Both the original Word document and the generated PDF "
+"are permanently and automatically deleted from our servers after one hour."
+msgstr ""
+"Безопасность — наш приоритет. Ваши документы загружаются по защищенному "
+"соединению и обрабатываются исключительно автоматизированными скриптами. Ни "
+"один человек не имеет доступа к вашим файлам. Как исходный документ Word, "
+"так и сгенерированный PDF навсегда и автоматически удаляются с наших "
+"серверов через один час."
