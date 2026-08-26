@@ -38,7 +38,7 @@ services:
     restart: always
 
   celery:
-    build: ..
+    build: .
     container_name: celery_worker
     working_dir: /app/Filetools
     command: celery -A Filetools worker --loglevel=info
@@ -54,7 +54,7 @@ services:
     restart: always
 
   celery-beat:
-    build: ..
+    build: .
     container_name: celery_beat
     working_dir: /app/Filetools
     command: celery -A Filetools beat --loglevel=info
