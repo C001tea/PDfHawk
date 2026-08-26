@@ -1,1 +1,1 @@
-web: gunicorn Filetools.wsgi --chdir Filetools
+web: gunicorn Filetools.wsgi --chdir Filetools --log-level debug
