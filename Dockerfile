@@ -8,8 +8,8 @@ RUN  sed -i 's/main/main contrib/g' /etc/apt/sources.list.d/debian.sources || tr
 
 WORKDIR /app
 
-COPY ../requirements.txt .
+COPY ./requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 
-COPY .. .
+COPY . .
