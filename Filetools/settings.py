@@ -2,6 +2,7 @@ from pathlib import Path
 import os
 from dotenv import load_dotenv
 from celery.schedules import crontab
+import dj_database_url
 
 load_dotenv()
 
@@ -30,6 +31,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -139,3 +141,7 @@ LOCALE_PATHS = [BASE_DIR / 'locale']
 STATICFILES_DIRS = [
     BASE_DIR / 'converters' / 'static',
 ]
+
+DATABASE_URL = os.getenv("DATABASE_URL")
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
