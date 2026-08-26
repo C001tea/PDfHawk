@@ -1,1 +1,3 @@
-web: gunicorn Filetools.wsgi --chdir Filetools --log-level debug
+web: python manage.py collectstatic --noinput && gunicorn Filetools.wsgi
+worker: celery -A Filetools worker --loglevel=info
+beat: celery -A Filetools beat --loglevel=info

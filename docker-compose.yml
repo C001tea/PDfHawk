@@ -1,0 +1,74 @@
+services:
+  db:
+    image: postgres:16
+    container_name: postgres
+    environment:
+      POSTGRES_DB: filetools
+      POSTGRES_USER: filetools_user
+      POSTGRES_PASSWORD:  ${database_password}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: always
+
+  redis:
+    image: redis:7
+    container_name: redis
+    ports:
+      - "6379:6379"
+    restart: always
+
+  web:
+    build: ..
+    container_name: django_pdf_to_word
+    command: python manage.py runserver 0.0.0.0:8000
+    ports:
+      - "8000:8000"
+    working_dir: /app/Filetools
+    volumes:
+      - .:/app
+      - media_data:/app/media
+    environment:
+      - DATABASE_URL=postgres://filetools_user:${database_password}@db:5432/filetools
+      - REDIS_URL=redis://redis:6379/0
+    depends_on:
+      - db
+      - redis
+    restart: always
+
+  celery:
+    build: ..
+    container_name: celery_worker
+    working_dir: /app/Filetools
+    command: celery -A Filetools worker --loglevel=info
+    volumes:
+      - .:/app
+      - media_data:/app/media
+    environment:
+      - DATABASE_URL=postgres://filetools_user:${database_password}@db:5432/filetools
+      - REDIS_URL=redis://redis:6379/0
+    depends_on:
+      - db
+      - redis
+    restart: always
+
+  celery-beat:
+    build: ..
+    container_name: celery_beat
+    working_dir: /app/Filetools
+    command: celery -A Filetools beat --loglevel=info
+    volumes:
+      - .:/app
+      - media_data:/app/media
+    environment:
+      - DATABASE_URL=postgres://filetools_user:${database_password}@db:5432/filetools
+      - REDIS_URL=redis://redis:6379/0
+    depends_on:
+      - db
+      - redis
+    restart: always
+
+volumes:
+  postgres_data:
+  media_data:

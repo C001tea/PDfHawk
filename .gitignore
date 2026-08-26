@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+../.venv/
+*.sqlite3
+media/
+staticfiles/
+converters/tesseract-ocr/
+tesseract-ocr/
+.env
+celerybeat-schedule
+*.log
+locale/*/LC_MESSAGES/*.mo
