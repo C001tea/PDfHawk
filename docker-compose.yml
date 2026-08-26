@@ -20,7 +20,7 @@ services:
     restart: always
 
   web:
-    build: ..
+    build: .
     container_name: django_pdf_to_word
     command: python manage.py runserver 0.0.0.0:8000
     ports:
