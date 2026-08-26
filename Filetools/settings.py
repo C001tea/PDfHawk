@@ -71,16 +71,23 @@ CHANNEL_LAYERS = {
     },
 }
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'filetools',
-        'USER': 'filetools_user',
-        'PASSWORD': os.getenv('database_password'),
-        'HOST': os.getenv('DB_HOST', 'postgres'),
-        'PORT': '5432',
+DATABASE_URL = os.getenv("DATABASE_URL")
+
+if DATABASE_URL:
+    DATABASES = {
+        'default': dj_database_url.parse(DATABASE_URL)
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'filetools',
+            'USER': 'filetools_user',
+            'PASSWORD': os.getenv('database_password'),
+            'HOST': os.getenv('DB_HOST', 'postgres'),
+            'PORT': '5432',
+        }
+    }
 
 
 AUTH_PASSWORD_VALIDATORS = [
@@ -142,6 +149,5 @@ STATICFILES_DIRS = [
     BASE_DIR / 'converters' / 'static',
 ]
 
-DATABASE_URL = os.getenv("DATABASE_URL")
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
