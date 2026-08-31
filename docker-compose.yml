@@ -79,6 +79,9 @@ services:
       - media_value:/app/media
     depends_on:
       - web
+
 volumes:
-  postgres_data:
-  media_data:
+    postgres_data:
+    media_data:
+    static_value:
+    media_value:
