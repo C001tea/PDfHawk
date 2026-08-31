@@ -29,6 +29,7 @@ services:
     volumes:
       - .:/app
       - media_value:/app/media
+      - static_value:/app/static
     environment:
       - DATABASE_URL=postgres://filetools_user:${database_password}@db:5432/filetools
       - REDIS_URL=redis://redis:6379/0
