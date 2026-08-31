@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Allow: /en/
+Allow: /ru/
+Allow: /static/
+Allow: /media/
+
+Disallow: /admin/
+Disallow: /*/get-preview/
+Disallow: /*/convert/
+Disallow: /*/download/
+Disallow: /*/process/
+Disallow: /api/
+
+Sitemap: https://pdfhawk.tech/sitemap.xml

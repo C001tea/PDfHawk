@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemap.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://pdfhawk.tech/en/pdf-to-word/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pdfhawk.tech/en/pdf-to-word/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pdfhawk.tech/ru/pdf-to-word/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pdfhawk.tech/en/pdf-to-word/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://pdfhawk.tech/ru/pdf-to-word/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pdfhawk.tech/en/pdf-to-word/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pdfhawk.tech/ru/pdf-to-word/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pdfhawk.tech/en/pdf-to-word/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://pdfhawk.tech/en/pdf-to-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pdfhawk.tech/en/pdf-to-image/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pdfhawk.tech/ru/pdf-to-image/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pdfhawk.tech/ru/pdf-to-image/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pdfhawk.tech/en/pdf-to-image/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pdfhawk.tech/ru/pdf-to-image/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://pdfhawk.tech/en/compress-pdf/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pdfhawk.tech/en/compress-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pdfhawk.tech/ru/compress-pdf/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pdfhawk.tech/ru/compress-pdf/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pdfhawk.tech/en/compress-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pdfhawk.tech/ru/compress-pdf/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://pdfhawk.tech/en/ocr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pdfhawk.tech/en/ocr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pdfhawk.tech/ru/ocr/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pdfhawk.tech/ru/ocr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pdfhawk.tech/en/ocr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pdfhawk.tech/ru/ocr/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://pdfhawk.tech/en/word-to-pdf/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pdfhawk.tech/en/word-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pdfhawk.tech/ru/word-to-pdf/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pdfhawk.tech/ru/word-to-pdf/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pdfhawk.tech/en/word-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pdfhawk.tech/ru/word-to-pdf/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://pdfhawk.tech/en/join-pdf/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pdfhawk.tech/en/join-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pdfhawk.tech/ru/join-pdf/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pdfhawk.tech/ru/join-pdf/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pdfhawk.tech/en/join-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pdfhawk.tech/ru/join-pdf/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://pdfhawk.tech/en/image-to-pdf/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pdfhawk.tech/en/image-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pdfhawk.tech/ru/image-to-pdf/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pdfhawk.tech/ru/image-to-pdf/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pdfhawk.tech/en/image-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pdfhawk.tech/ru/image-to-pdf/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
