@@ -22,13 +22,13 @@ services:
   web:
     build: .
     container_name: django_pdf_to_word
-    command: gunicorn Filetools.wsgi:application -- bind 0.0.0.0:8000 --workers 3
+    command: gunicorn Filetools.wsgi:application --bind 0.0.0.0:8000 --workers 3
     expose:
       - "8000"
     working_dir: /app
     volumes:
       - .:/app
-      - media_data:/app/media
+      - media_value:/app/media
     environment:
       - DATABASE_URL=postgres://filetools_user:${database_password}@db:5432/filetools
       - REDIS_URL=redis://redis:6379/0
@@ -44,7 +44,7 @@ services:
     command: celery -A Filetools worker --loglevel=info
     volumes:
       - .:/app
-      - media_data:/app/media
+      - media_value:/app/media
     environment:
       - DATABASE_URL=postgres://filetools_user:${database_password}@db:5432/filetools
       - REDIS_URL=redis://redis:6379/0
@@ -60,7 +60,7 @@ services:
     command: celery -A Filetools beat --loglevel=info
     volumes:
       - .:/app
-      - media_data:/app/media
+      - media_value:/app/media
     environment:
       - DATABASE_URL=postgres://filetools_user:${database_password}@db:5432/filetools
       - REDIS_URL=redis://redis:6379/0
@@ -79,9 +79,9 @@ services:
       - media_value:/app/media
     depends_on:
       - web
+    restart: always
 
 volumes:
     postgres_data:
-    media_data:
     static_value:
     media_value:
