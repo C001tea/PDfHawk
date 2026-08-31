@@ -149,5 +149,9 @@ STATICFILES_DIRS = [
     BASE_DIR / 'converters' / 'static',
 ]
 
-
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://pdfhawk.tech',
+    'https://www.pdfhawk.tech',
+]
